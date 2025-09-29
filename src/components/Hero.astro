@@ -1,0 +1,55 @@
+---
+interface Props {
+  videoUrl?: string;
+  heading: string;
+  description?: string;
+}
+
+const { videoUrl = '/hero-video.mp4', heading, description } = Astro.props;
+---
+
+<section class="relative h-screen w-full overflow-hidden">
+  <!-- Background Video -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src={videoUrl} type="video/mp4" />
+  </video>
+
+  <!-- 50% Black Overlay -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 h-full flex items-center justify-center px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-8">
+        {heading}
+      </p>
+      {description && (
+        <p class="text-lg md:text-xl text-white font-body max-w-3xl mx-auto leading-relaxed mb-10">
+          {description}
+        </p>
+      )}
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href="/about"
+          class="px-8 py-4 bg-white text-primary font-body text-lg rounded-lg hover:bg-opacity-90 transition-colors min-w-[200px]"
+        >
+          Learn More
+        </a>
+        <a
+          href="/products"
+          class="px-8 py-4 bg-transparent text-white border-2 border-white font-body text-lg rounded-lg hover:bg-white hover:text-primary transition-colors min-w-[200px]"
+        >
+          View Product Categories
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
