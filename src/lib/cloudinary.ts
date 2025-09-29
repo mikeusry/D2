@@ -13,6 +13,20 @@ export const cld = new Cloudinary({
   }
 });
 
+// Types for image effects
+export interface CloudinaryEffect {
+  blur?: number | 'faces' | 'region';
+  grayscale?: boolean;
+  sepia?: number;
+  pixelate?: number;
+  oil_paint?: number;
+  cartoonify?: boolean;
+  vignette?: number;
+  saturation?: number;
+  brightness?: number;
+  contrast?: number;
+}
+
 // Types for image transformations
 export interface CloudinaryImageOptions {
   publicId: string;
@@ -20,9 +34,37 @@ export interface CloudinaryImageOptions {
   height?: number;
   crop?: 'fill' | 'fit' | 'scale' | 'crop' | 'thumb' | 'limit' | 'pad' | 'lfill' | 'mfit';
   quality?: number | 'auto';
-  format?: 'auto' | 'webp' | 'jpg' | 'png';
+  format?: 'auto' | 'webp' | 'avif' | 'jpg' | 'png';
   gravity?: string;
   aspectRatio?: number;
+  effects?: CloudinaryEffect;
+  dpr?: number | 'auto';
+}
+
+/**
+ * Build effects transformation string from CloudinaryEffect object
+ * @param effects - Effects to apply
+ * @returns Comma-separated effects string
+ */
+function buildEffectsString(effects?: CloudinaryEffect): string {
+  if (!effects) return '';
+
+  const effectTransforms: string[] = [];
+
+  if (effects.blur) {
+    effectTransforms.push(typeof effects.blur === 'number' ? `e_blur:${effects.blur}` : `e_blur_${effects.blur}`);
+  }
+  if (effects.grayscale) effectTransforms.push('e_grayscale');
+  if (effects.sepia) effectTransforms.push(`e_sepia:${effects.sepia}`);
+  if (effects.pixelate) effectTransforms.push(`e_pixelate:${effects.pixelate}`);
+  if (effects.oil_paint) effectTransforms.push(`e_oil_paint:${effects.oil_paint}`);
+  if (effects.cartoonify) effectTransforms.push('e_cartoonify');
+  if (effects.vignette) effectTransforms.push(`e_vignette:${effects.vignette}`);
+  if (effects.saturation) effectTransforms.push(`e_saturation:${effects.saturation}`);
+  if (effects.brightness) effectTransforms.push(`e_brightness:${effects.brightness}`);
+  if (effects.contrast) effectTransforms.push(`e_contrast:${effects.contrast}`);
+
+  return effectTransforms.join(',');
 }
 
 /**
@@ -40,9 +82,14 @@ export function buildCloudinaryUrl(options: CloudinaryImageOptions): string {
     format = 'auto',
     gravity,
     aspectRatio,
+    effects,
+    dpr = 'auto',
   } = options;
 
   const transformations: string[] = [];
+
+  // Add DPR (device pixel ratio)
+  if (dpr) transformations.push(`dpr_${dpr}`);
 
   // Add crop mode
   if (crop) transformations.push(`c_${crop}`);
@@ -63,6 +110,12 @@ export function buildCloudinaryUrl(options: CloudinaryImageOptions): string {
   // Add format
   if (format) transformations.push(`f_${format}`);
 
+  // Add effects if any
+  const effectsString = buildEffectsString(effects);
+  if (effectsString) {
+    transformations.push(effectsString);
+  }
+
   const transformString = transformations.length > 0 ? `${transformations.join(',')}/` : '';
 
   return `https://res.cloudinary.com/${cloudName}/image/upload/${transformString}${publicId}`;
@@ -80,8 +133,10 @@ export function getCloudinaryResponsiveSet(options: {
   quality?: number | 'auto';
   format?: string;
   aspectRatio?: number;
+  effects?: CloudinaryEffect;
+  dpr?: number | 'auto';
 }): string {
-  const { publicId, sizes, crop, quality, format, aspectRatio } = options;
+  const { publicId, sizes, crop, quality, format, aspectRatio, effects, dpr } = options;
 
   return sizes
     .map((size) => {
@@ -92,6 +147,8 @@ export function getCloudinaryResponsiveSet(options: {
         crop: crop as any,
         quality,
         format: format as any,
+        effects,
+        dpr,
       });
       return `${url} ${size}w`;
     })

@@ -1,0 +1,57 @@
+---
+import CloudinaryImage from './CloudinaryImage.astro';
+
+export interface GalleryImage {
+  publicId: string;
+  alt: string;
+  caption?: string;
+}
+
+interface Props {
+  images: GalleryImage[];
+  columns?: 2 | 3 | 4;
+  gap?: number;
+  aspectRatio?: string;
+  class?: string;
+}
+
+const {
+  images,
+  columns = 3,
+  gap = 4,
+  aspectRatio = '1/1',
+  class: className = '',
+} = Astro.props;
+
+const gridCols = {
+  2: 'grid-cols-1 md:grid-cols-2',
+  3: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+  4: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4',
+}[columns];
+
+const gapClass = `gap-${gap}`;
+---
+
+<div class={`grid ${gridCols} ${gapClass} ${className}`}>
+  {images.map((image) => (
+    <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+      <CloudinaryImage
+        publicId={image.publicId}
+        alt={image.alt}
+        width={800}
+        crop="fill"
+        quality="auto"
+        format="auto"
+        aspectRatio={aspectRatio}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+        placeholder="blur"
+      />
+      {image.caption && (
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+          <p class="text-white text-sm font-medium">{image.caption}</p>
+        </div>
+      )}
+    </div>
+  ))}
+</div>

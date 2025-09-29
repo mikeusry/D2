@@ -1,0 +1,374 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CloudinaryImage from '../components/CloudinaryImage.astro';
+import CloudinaryAvatar from '../components/CloudinaryAvatar.astro';
+import CloudinaryHeroImage from '../components/CloudinaryHeroImage.astro';
+import CloudinaryGallery from '../components/CloudinaryGallery.astro';
+
+const galleryImages = [
+  { publicId: 'samples/food/spices', alt: 'Spices', caption: 'Fresh Spices' },
+  { publicId: 'samples/food/pot-mussels', alt: 'Mussels', caption: 'Seafood' },
+  { publicId: 'samples/food/fish-vegetables', alt: 'Fish', caption: 'Healthy Options' },
+  { publicId: 'samples/food/dessert', alt: 'Dessert', caption: 'Sweet Treats' },
+  { publicId: 'samples/breakfast', alt: 'Breakfast', caption: 'Morning Delights' },
+  { publicId: 'samples/food/pot-mussels', alt: 'Fresh Food', caption: 'Quality Ingredients' },
+];
+---
+
+<Layout title="Advanced Image Examples - D2 Sanitizers">
+  <main class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-heading font-bold text-navy mb-4">Advanced CloudinaryImage Features</h1>
+      <p class="text-lg text-gray-700 mb-12">
+        Comprehensive examples showcasing enhanced features including effects, placeholders, performance optimizations, and helper components.
+      </p>
+
+      <!-- Hero Image Component -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">CloudinaryHeroImage Component</h2>
+        <p class="text-gray-600 mb-4">Full-width hero with overlay and slot for content</p>
+        <CloudinaryHeroImage
+          publicId="samples/landscapes/beach-boat"
+          alt="Hero beach scene"
+          height={400}
+          overlay={true}
+          overlayOpacity={40}
+        >
+          <div class="text-center text-white z-10">
+            <h3 class="text-4xl font-heading font-bold mb-2">Welcome to D2 Sanitizers</h3>
+            <p class="text-xl">Professional Sanitization Solutions</p>
+          </div>
+        </CloudinaryHeroImage>
+      </section>
+
+      <!-- Image Effects -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Image Effects</h2>
+        <p class="text-gray-600 mb-4">Apply Cloudinary effects on-the-fly</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Original</p>
+            <CloudinaryImage
+              publicId="samples/animals/cat"
+              alt="Original cat"
+              width={300}
+              height={300}
+              crop="fill"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Grayscale</p>
+            <CloudinaryImage
+              publicId="samples/animals/cat"
+              alt="Grayscale cat"
+              width={300}
+              height={300}
+              crop="fill"
+              effects={{ grayscale: true }}
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Sepia</p>
+            <CloudinaryImage
+              publicId="samples/animals/cat"
+              alt="Sepia cat"
+              width={300}
+              height={300}
+              crop="fill"
+              effects={{ sepia: 80 }}
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Blur</p>
+            <CloudinaryImage
+              publicId="samples/animals/cat"
+              alt="Blurred cat"
+              width={300}
+              height={300}
+              crop="fill"
+              effects={{ blur: 300 }}
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Advanced Effects -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Advanced Effects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Pixelate</p>
+            <CloudinaryImage
+              publicId="samples/people/kitchen-bar"
+              alt="Pixelated"
+              width={400}
+              height={300}
+              crop="fill"
+              effects={{ pixelate: 10 }}
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Cartoonify</p>
+            <CloudinaryImage
+              publicId="samples/people/kitchen-bar"
+              alt="Cartoonified"
+              width={400}
+              height={300}
+              crop="fill"
+              effects={{ cartoonify: true }}
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Oil Paint</p>
+            <CloudinaryImage
+              publicId="samples/people/kitchen-bar"
+              alt="Oil paint effect"
+              width={400}
+              height={300}
+              crop="fill"
+              effects={{ oil_paint: 40 }}
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Placeholder Loading -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Placeholder Loading States</h2>
+        <p class="text-gray-600 mb-4">Images load with blur placeholders for better UX</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Blur Placeholder</p>
+            <CloudinaryImage
+              publicId="samples/landscapes/architecture-signs"
+              alt="With blur placeholder"
+              width={400}
+              height={300}
+              crop="fill"
+              placeholder="blur"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Pixelate Placeholder</p>
+            <CloudinaryImage
+              publicId="samples/landscapes/girl-urban-view"
+              alt="With pixelate placeholder"
+              width={400}
+              height={300}
+              crop="fill"
+              placeholder="pixelate"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">No Placeholder</p>
+            <CloudinaryImage
+              publicId="samples/bike"
+              alt="Without placeholder"
+              width={400}
+              height={300}
+              crop="fill"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Avatar Component -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">CloudinaryAvatar Component</h2>
+        <p class="text-gray-600 mb-4">Optimized avatars with face detection and various sizes</p>
+        <div class="flex items-center gap-6 flex-wrap">
+          <div class="text-center">
+            <CloudinaryAvatar
+              publicId="samples/people/smiling-man"
+              alt="User 1"
+              size={128}
+              rounded="full"
+            />
+            <p class="text-sm mt-2">Size: 128px</p>
+          </div>
+          <div class="text-center">
+            <CloudinaryAvatar
+              publicId="samples/people/boy-snow-hoodie"
+              alt="User 2"
+              size={96}
+              rounded="full"
+            />
+            <p class="text-sm mt-2">Size: 96px</p>
+          </div>
+          <div class="text-center">
+            <CloudinaryAvatar
+              publicId="samples/people/kitchen-bar"
+              alt="User 3"
+              size={64}
+              rounded="full"
+            />
+            <p class="text-sm mt-2">Size: 64px</p>
+          </div>
+          <div class="text-center">
+            <CloudinaryAvatar
+              publicId="samples/people/smiling-man"
+              alt="User 4"
+              size={96}
+              rounded="lg"
+            />
+            <p class="text-sm mt-2">Rounded: lg</p>
+          </div>
+          <div class="text-center">
+            <CloudinaryAvatar
+              publicId="samples/people/boy-snow-hoodie"
+              alt="User 5"
+              size={96}
+              rounded="md"
+            />
+            <p class="text-sm mt-2">Rounded: md</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Component -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">CloudinaryGallery Component</h2>
+        <p class="text-gray-600 mb-4">Responsive image gallery with hover effects and captions</p>
+        <CloudinaryGallery
+          images={galleryImages}
+          columns={3}
+          gap={6}
+          aspectRatio="4/3"
+        />
+      </section>
+
+      <!-- Format Optimization -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Format Optimization</h2>
+        <p class="text-gray-600 mb-4">Automatic format selection (WebP/AVIF) based on browser support</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Format: Auto</p>
+            <CloudinaryImage
+              publicId="samples/food/dessert"
+              alt="Auto format"
+              width={400}
+              height={300}
+              crop="fill"
+              format="auto"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Format: WebP</p>
+            <CloudinaryImage
+              publicId="samples/food/dessert"
+              alt="WebP format"
+              width={400}
+              height={300}
+              crop="fill"
+              format="webp"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Format: AVIF</p>
+            <CloudinaryImage
+              publicId="samples/food/dessert"
+              alt="AVIF format"
+              width={400}
+              height={300}
+              crop="fill"
+              format="avif"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Performance Features -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Performance Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-heading font-bold text-navy mb-3">Preload Critical Images</h3>
+            <p class="text-gray-700 mb-4">Use <code class="bg-gray-200 px-2 py-1 rounded">preload={true}</code> for above-the-fold images</p>
+            <CloudinaryImage
+              publicId="samples/landscapes/beach-boat"
+              alt="Preloaded image"
+              width={400}
+              height={300}
+              crop="fill"
+              preload={true}
+              fetchPriority="high"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-heading font-bold text-navy mb-3">DPR Optimization</h3>
+            <p class="text-gray-700 mb-4">Automatic device pixel ratio adjustment for retina displays</p>
+            <CloudinaryImage
+              publicId="samples/landscapes/architecture-signs"
+              alt="DPR optimized"
+              width={400}
+              height={300}
+              crop="fill"
+              dpr="auto"
+              class="w-full rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Summary -->
+      <section class="bg-light-blue p-8 rounded-lg">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Enhanced Features Summary</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h3 class="font-heading font-bold text-navy mb-2">Advanced Features</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>10+ image effects (blur, grayscale, sepia, etc.)</li>
+              <li>Placeholder loading states (blur, pixelate)</li>
+              <li>Error handling with fallbacks</li>
+              <li>AVIF format support</li>
+              <li>Gravity-based cropping</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-navy mb-2">Performance</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>Intersection Observer lazy loading</li>
+              <li>Preload hints for critical images</li>
+              <li>Device Pixel Ratio optimization</li>
+              <li>Fetch priority control</li>
+              <li>Responsive srcset generation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-navy mb-2">Developer Experience</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>Full TypeScript support</li>
+              <li>Prop validation</li>
+              <li>Helper components (Avatar, Hero, Gallery)</li>
+              <li>Comprehensive documentation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-navy mb-2">Integration</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>Tailwind CSS compatible</li>
+              <li>Multiple layout patterns</li>
+              <li>Gallery with hover effects</li>
+              <li>Customizable placeholders</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>

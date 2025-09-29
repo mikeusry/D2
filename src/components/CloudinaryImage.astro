@@ -1,6 +1,19 @@
 ---
 import { buildCloudinaryUrl, getCloudinaryResponsiveSet } from '../lib/cloudinary';
 
+export interface CloudinaryEffect {
+  blur?: number | 'faces' | 'region';
+  grayscale?: boolean;
+  sepia?: number;
+  pixelate?: number;
+  oil_paint?: number;
+  cartoonify?: boolean;
+  vignette?: number;
+  saturation?: number;
+  brightness?: number;
+  contrast?: number;
+}
+
 interface Props {
   publicId: string;
   alt: string;
@@ -8,11 +21,18 @@ interface Props {
   height?: number;
   crop?: 'fill' | 'fit' | 'scale' | 'crop' | 'thumb' | 'limit' | 'pad' | 'lfill' | 'mfit';
   quality?: number | 'auto';
-  format?: 'auto' | 'webp' | 'jpg' | 'png';
+  format?: 'auto' | 'webp' | 'avif' | 'jpg' | 'png';
   class?: string;
   loading?: 'lazy' | 'eager';
   sizes?: string;
   aspectRatio?: string;
+  effects?: CloudinaryEffect;
+  placeholder?: 'blur' | 'pixelate' | 'predominant' | boolean;
+  preload?: boolean;
+  dpr?: number | 'auto';
+  gravity?: 'auto' | 'face' | 'faces' | 'center' | 'north' | 'south' | 'east' | 'west';
+  fetchPriority?: 'high' | 'low' | 'auto';
+  onError?: string;
 }
 
 const {
@@ -27,9 +47,24 @@ const {
   loading = 'lazy',
   sizes = '100vw',
   aspectRatio,
+  effects,
+  placeholder = false,
+  preload = false,
+  dpr = 'auto',
+  gravity,
+  fetchPriority,
+  onError,
 } = Astro.props;
 
-// Generate the primary image URL
+// Validate required props
+if (!publicId) {
+  throw new Error('CloudinaryImage: publicId is required');
+}
+if (!alt) {
+  console.warn(`CloudinaryImage: Missing alt text for image ${publicId}`);
+}
+
+// Generate the primary image URL with all transformations
 const imageUrl = buildCloudinaryUrl({
   publicId,
   width,
@@ -37,9 +72,12 @@ const imageUrl = buildCloudinaryUrl({
   crop,
   quality,
   format,
+  effects,
+  dpr,
+  gravity,
 });
 
-// Generate responsive srcset
+// Generate responsive srcset with DPR consideration
 const responsiveSizes = [400, 800, 1200, 1600];
 const srcset = getCloudinaryResponsiveSet({
   publicId,
@@ -48,18 +86,117 @@ const srcset = getCloudinaryResponsiveSet({
   quality,
   format,
   aspectRatio: height && width ? height / width : undefined,
+  effects,
+  dpr,
 });
+
+// Generate placeholder if enabled
+let placeholderUrl: string | undefined;
+if (placeholder) {
+  const placeholderEffect =
+    placeholder === 'blur' ? { blur: 1000 } :
+    placeholder === 'pixelate' ? { pixelate: 20 } :
+    placeholder === 'predominant' ? undefined :
+    undefined;
+
+  placeholderUrl = buildCloudinaryUrl({
+    publicId,
+    width: 50,
+    crop,
+    quality: 10,
+    format: 'auto',
+    effects: placeholderEffect,
+  });
+}
+
+// Generate unique ID for this image instance
+const imageId = `cloudinary-${publicId.replace(/[^a-zA-Z0-9]/g, '-')}-${Math.random().toString(36).substr(2, 9)}`;
 ---
 
+{preload && (
+  <link
+    rel="preload"
+    as="image"
+    href={imageUrl}
+    imagesrcset={srcset}
+    imagesizes={sizes}
+  />
+)}
+
 <img
-  src={imageUrl}
-  srcset={srcset}
+  id={imageId}
+  src={placeholderUrl || imageUrl}
+  data-src={placeholderUrl ? imageUrl : undefined}
+  srcset={placeholderUrl ? undefined : srcset}
+  data-srcset={placeholderUrl ? srcset : undefined}
   sizes={sizes}
   alt={alt}
   width={width}
   height={height}
   loading={loading}
   decoding="async"
-  class={className}
+  fetchpriority={fetchPriority}
+  class={`${className} ${placeholderUrl ? 'cloudinary-lazy' : ''}`}
   style={aspectRatio ? `aspect-ratio: ${aspectRatio};` : undefined}
+  onerror={onError || "this.onerror=null; this.style.display='none'; console.error('Failed to load image:', this.src);"}
 />
+
+{placeholderUrl && (
+  <script define:vars={{ imageId }}>
+    // Enhanced lazy loading with intersection observer
+    if ('IntersectionObserver' in window) {
+      const img = document.getElementById(imageId);
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const target = entry.target;
+
+            // Load high-res image
+            if (target.dataset.src) {
+              target.src = target.dataset.src;
+              delete target.dataset.src;
+            }
+
+            if (target.dataset.srcset) {
+              target.srcset = target.dataset.srcset;
+              delete target.dataset.srcset;
+            }
+
+            // Remove lazy class
+            target.classList.remove('cloudinary-lazy');
+
+            observer.unobserve(target);
+          }
+        });
+      }, {
+        rootMargin: '50px 0px', // Start loading 50px before entering viewport
+        threshold: 0.01
+      });
+
+      if (img) {
+        observer.observe(img);
+      }
+    } else {
+      // Fallback for older browsers
+      const img = document.getElementById(imageId);
+      if (img && img.dataset.src) {
+        img.src = img.dataset.src;
+        if (img.dataset.srcset) {
+          img.srcset = img.dataset.srcset;
+        }
+      }
+    }
+  </script>
+)}
+
+<style>
+  .cloudinary-lazy {
+    filter: blur(10px);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .cloudinary-lazy:not([data-src]) {
+    filter: none;
+  }
+</style>

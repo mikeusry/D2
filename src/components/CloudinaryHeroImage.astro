@@ -1,0 +1,46 @@
+---
+import CloudinaryImage from './CloudinaryImage.astro';
+
+interface Props {
+  publicId: string;
+  alt: string;
+  height?: number;
+  class?: string;
+  overlay?: boolean;
+  overlayOpacity?: number;
+}
+
+const {
+  publicId,
+  alt,
+  height = 600,
+  class: className = '',
+  overlay = false,
+  overlayOpacity = 50,
+} = Astro.props;
+---
+
+<div class={`relative w-full ${className}`}>
+  <CloudinaryImage
+    publicId={publicId}
+    alt={alt}
+    width={1920}
+    height={height}
+    crop="fill"
+    quality="auto"
+    format="auto"
+    class="w-full h-full object-cover"
+    loading="eager"
+    fetchPriority="high"
+    preload={true}
+  />
+  {overlay && (
+    <div
+      class="absolute inset-0 bg-black"
+      style={`opacity: ${overlayOpacity / 100};`}
+    ></div>
+  )}
+  <div class="absolute inset-0 flex items-center justify-center">
+    <slot />
+  </div>
+</div>
