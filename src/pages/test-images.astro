@@ -1,0 +1,233 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CloudinaryImage from '../components/CloudinaryImage.astro';
+---
+
+<Layout title="Cloudinary Image Test - D2 Sanitizers">
+  <main class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-heading font-bold text-navy mb-8">Cloudinary Image Component Test</h1>
+
+      <p class="text-lg text-gray-700 mb-12">
+        Testing CloudinaryImage component with various transformations and use cases.
+        Using cloud name: <code class="bg-gray-100 px-2 py-1 rounded">southland-organics</code>
+      </p>
+
+      <!-- Hero Image Example -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Hero Image (Full Width)</h2>
+        <p class="text-gray-600 mb-4">Large hero image with fill crop and auto quality</p>
+        <div class="w-full">
+          <CloudinaryImage
+            publicId="samples/food/spices"
+            alt="Hero banner showing spices"
+            width={1600}
+            height={600}
+            crop="fill"
+            quality="auto"
+            format="auto"
+            class="w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      <!-- Product Grid Example -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Product Grid (Square Thumbnails)</h2>
+        <p class="text-gray-600 mb-4">Square images using fill crop with center gravity</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <CloudinaryImage
+            publicId="samples/food/pot-mussels"
+            alt="Product 1"
+            width={400}
+            height={400}
+            crop="fill"
+            quality="auto"
+            class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          />
+          <CloudinaryImage
+            publicId="samples/food/fish-vegetables"
+            alt="Product 2"
+            width={400}
+            height={400}
+            crop="fill"
+            quality="auto"
+            class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          />
+          <CloudinaryImage
+            publicId="samples/food/dessert"
+            alt="Product 3"
+            width={400}
+            height={400}
+            crop="fill"
+            quality="auto"
+            class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          />
+          <CloudinaryImage
+            publicId="samples/breakfast"
+            alt="Product 4"
+            width={400}
+            height={400}
+            crop="fill"
+            quality="auto"
+            class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow"
+          />
+        </div>
+      </section>
+
+      <!-- Responsive Gallery Example -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Responsive Gallery (16:9 Aspect Ratio)</h2>
+        <p class="text-gray-600 mb-4">Images that maintain aspect ratio across breakpoints</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <CloudinaryImage
+            publicId="samples/landscapes/beach-boat"
+            alt="Gallery image 1"
+            width={800}
+            crop="fill"
+            quality="auto"
+            aspectRatio="16/9"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+          <CloudinaryImage
+            publicId="samples/landscapes/architecture-signs"
+            alt="Gallery image 2"
+            width={800}
+            crop="fill"
+            quality="auto"
+            aspectRatio="16/9"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+          <CloudinaryImage
+            publicId="samples/landscapes/girl-urban-view"
+            alt="Gallery image 3"
+            width={800}
+            crop="fill"
+            quality="auto"
+            aspectRatio="16/9"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+      </section>
+
+      <!-- Different Crop Modes -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Different Crop Modes</h2>
+        <p class="text-gray-600 mb-4">Comparing fill, fit, and scale crop modes</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Crop: Fill</p>
+            <CloudinaryImage
+              publicId="samples/people/kitchen-bar"
+              alt="Fill crop example"
+              width={400}
+              height={300}
+              crop="fill"
+              quality="auto"
+              class="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Crop: Fit</p>
+            <CloudinaryImage
+              publicId="samples/people/kitchen-bar"
+              alt="Fit crop example"
+              width={400}
+              height={300}
+              crop="fit"
+              quality="auto"
+              class="w-full h-auto rounded-lg shadow-md bg-gray-100"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Crop: Scale</p>
+            <CloudinaryImage
+              publicId="samples/people/kitchen-bar"
+              alt="Scale crop example"
+              width={400}
+              height={300}
+              crop="scale"
+              quality="auto"
+              class="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Quality Comparison -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Quality Settings</h2>
+        <p class="text-gray-600 mb-4">Comparing auto quality vs. specific quality values</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Quality: Auto (optimized)</p>
+            <CloudinaryImage
+              publicId="samples/animals/cat"
+              alt="Auto quality"
+              width={600}
+              height={400}
+              crop="fill"
+              quality="auto"
+              class="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-navy mb-2">Quality: 60 (lower file size)</p>
+            <CloudinaryImage
+              publicId="samples/animals/cat"
+              alt="Quality 60"
+              width={600}
+              height={400}
+              crop="fill"
+              quality={60}
+              class="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Lazy Loading Demo -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Lazy Loading (Scroll Down)</h2>
+        <p class="text-gray-600 mb-4">Images below use lazy loading for better performance</p>
+        <div class="space-y-8">
+          <CloudinaryImage
+            publicId="samples/bike"
+            alt="Lazy loaded image 1"
+            width={1200}
+            height={800}
+            crop="fill"
+            quality="auto"
+            loading="lazy"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+          <CloudinaryImage
+            publicId="samples/balloons"
+            alt="Lazy loaded image 2"
+            width={1200}
+            height={800}
+            crop="fill"
+            quality="auto"
+            loading="lazy"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+      </section>
+
+      <!-- Technical Details -->
+      <section class="bg-gray-50 p-8 rounded-lg">
+        <h2 class="text-2xl font-heading font-bold text-navy mb-4">Component Features</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Automatic responsive srcset generation (400w, 800w, 1200w, 1600w)</li>
+          <li>Format optimization (auto WebP/AVIF support)</li>
+          <li>Quality optimization (auto quality by default)</li>
+          <li>Lazy loading support</li>
+          <li>Aspect ratio preservation</li>
+          <li>Multiple crop modes (fill, fit, scale, crop, thumb, etc.)</li>
+          <li>TypeScript type safety</li>
+          <li>Proper accessibility attributes</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</Layout>

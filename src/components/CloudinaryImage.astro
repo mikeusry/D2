@@ -1,0 +1,65 @@
+---
+import { buildCloudinaryUrl, getCloudinaryResponsiveSet } from '../lib/cloudinary';
+
+interface Props {
+  publicId: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  crop?: 'fill' | 'fit' | 'scale' | 'crop' | 'thumb' | 'limit' | 'pad' | 'lfill' | 'mfit';
+  quality?: number | 'auto';
+  format?: 'auto' | 'webp' | 'jpg' | 'png';
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  sizes?: string;
+  aspectRatio?: string;
+}
+
+const {
+  publicId,
+  alt,
+  width,
+  height,
+  crop = 'fill',
+  quality = 'auto',
+  format = 'auto',
+  class: className = '',
+  loading = 'lazy',
+  sizes = '100vw',
+  aspectRatio,
+} = Astro.props;
+
+// Generate the primary image URL
+const imageUrl = buildCloudinaryUrl({
+  publicId,
+  width,
+  height,
+  crop,
+  quality,
+  format,
+});
+
+// Generate responsive srcset
+const responsiveSizes = [400, 800, 1200, 1600];
+const srcset = getCloudinaryResponsiveSet({
+  publicId,
+  sizes: responsiveSizes,
+  crop,
+  quality,
+  format,
+  aspectRatio: height && width ? height / width : undefined,
+});
+---
+
+<img
+  src={imageUrl}
+  srcset={srcset}
+  sizes={sizes}
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding="async"
+  class={className}
+  style={aspectRatio ? `aspect-ratio: ${aspectRatio};` : undefined}
+/>
