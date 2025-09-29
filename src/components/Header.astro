@@ -1,0 +1,197 @@
+---
+import Cart from './Cart';
+---
+
+<header id="header" class="fixed top-0 left-0 right-0 bg-white z-50 transition-shadow duration-300">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center">
+          <img src="/logo.svg" alt="D2 Sanitizers" class="h-12" />
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="/about" class="text-primary hover:text-primary-blue font-body text-base transition-colors">
+          About
+        </a>
+        <a href="/resources" class="text-primary hover:text-primary-blue font-body text-base transition-colors">
+          Resources
+        </a>
+        <a href="/blog" class="text-primary hover:text-primary-blue font-body text-base transition-colors">
+          Blog
+        </a>
+
+        <!-- Products Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center text-primary hover:text-primary-blue font-body text-base transition-colors">
+            Products
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white shadow-lg rounded-lg overflow-hidden">
+            <a href="/products/all" class="block px-4 py-3 text-navy hover:bg-light-blue transition-colors">
+              All Products
+            </a>
+            <a href="/products/sanitizers" class="block px-4 py-3 text-navy hover:bg-light-blue transition-colors">
+              Sanitizers
+            </a>
+            <a href="/products/cleaners" class="block px-4 py-3 text-navy hover:bg-light-blue transition-colors">
+              Cleaners
+            </a>
+            <a href="/products/disinfectants" class="block px-4 py-3 text-navy hover:bg-light-blue transition-colors">
+              Disinfectants
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Actions -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <!-- Search Button -->
+        <button
+          id="search-btn"
+          class="p-2 text-navy hover:text-primary border border-gray-300 rounded-lg transition-colors"
+          aria-label="Search"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+
+        <!-- Contact Button -->
+        <a
+          href="/contact"
+          class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-colors font-body"
+        >
+          Contact
+        </a>
+
+        <!-- Login Button -->
+        <a
+          href="/login"
+          class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-colors font-body"
+        >
+          Login
+        </a>
+
+        <!-- Cart -->
+        <Cart client:load />
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 text-navy hover:text-primary transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+    <div class="px-4 py-6 space-y-4">
+      <a href="/about" class="block text-primary hover:text-primary-blue font-body text-base py-2">
+        About
+      </a>
+      <a href="/resources" class="block text-primary hover:text-primary-blue font-body text-base py-2">
+        Resources
+      </a>
+      <a href="/blog" class="block text-primary hover:text-primary-blue font-body text-base py-2">
+        Blog
+      </a>
+
+      <!-- Mobile Products Dropdown -->
+      <div>
+        <button id="mobile-products-btn" class="flex items-center justify-between w-full text-primary hover:text-primary-blue font-body text-base py-2">
+          Products
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="mobile-products-menu" class="hidden pl-4 mt-2 space-y-2">
+          <a href="/products/all" class="block text-navy hover:text-primary py-2">
+            All Products
+          </a>
+          <a href="/products/sanitizers" class="block text-navy hover:text-primary py-2">
+            Sanitizers
+          </a>
+          <a href="/products/cleaners" class="block text-navy hover:text-primary py-2">
+            Cleaners
+          </a>
+          <a href="/products/disinfectants" class="block text-navy hover:text-primary py-2">
+            Disinfectants
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-4 space-y-3 border-t border-gray-200">
+        <button class="flex items-center text-navy hover:text-primary w-full py-2">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          Search
+        </button>
+        <a href="/contact" class="block w-full text-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90">
+          Contact
+        </a>
+        <a href="/login" class="block w-full text-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90">
+          Login
+        </a>
+        <div class="flex justify-center pt-2">
+          <Cart client:load />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Sticky header on scroll
+  let lastScroll = 0;
+  const header = document.getElementById('header');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 20) {
+      header?.classList.add('shadow-md');
+    } else {
+      header?.classList.remove('shadow-md');
+    }
+
+    lastScroll = currentScroll;
+  });
+
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Mobile products dropdown
+  const mobileProductsBtn = document.getElementById('mobile-products-btn');
+  const mobileProductsMenu = document.getElementById('mobile-products-menu');
+
+  mobileProductsBtn?.addEventListener('click', () => {
+    mobileProductsMenu?.classList.toggle('hidden');
+  });
+
+  // Search button functionality
+  const searchBtn = document.getElementById('search-btn');
+  searchBtn?.addEventListener('click', () => {
+    // TODO: Implement search modal
+    alert('Search functionality coming soon!');
+  });
+</script>
