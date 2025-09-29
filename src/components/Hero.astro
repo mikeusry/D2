@@ -1,11 +1,19 @@
 ---
+import { getCloudinaryVideoUrl } from '../lib/cloudinary';
+
 interface Props {
   videoUrl?: string;
+  cloudinaryVideoId?: string;
   heading: string;
   description?: string;
 }
 
-const { videoUrl = '/hero-video.mp4', heading, description } = Astro.props;
+const { videoUrl, cloudinaryVideoId, heading, description } = Astro.props;
+
+// Use Cloudinary video if cloudinaryVideoId is provided, otherwise use videoUrl
+const finalVideoUrl = cloudinaryVideoId
+  ? getCloudinaryVideoUrl(cloudinaryVideoId)
+  : videoUrl || '/hero-video.mp4';
 ---
 
 <section class="relative h-screen w-full overflow-hidden">
@@ -17,7 +25,7 @@ const { videoUrl = '/hero-video.mp4', heading, description } = Astro.props;
     playsinline
     class="absolute inset-0 w-full h-full object-cover"
   >
-    <source src={videoUrl} type="video/mp4" />
+    <source src={finalVideoUrl} type="video/mp4" />
   </video>
 
   <!-- 50% Black Overlay -->
