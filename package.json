@@ -6,15 +6,48 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "upload-images": "node scripts/upload-to-cloudinary.js",
+    "crawl-bestsanitizers": "node bestsanitizers-simple.js",
+    "sanity": "cd studio && sanity start",
+    "sanity:deploy": "cd studio && sanity deploy"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
+    "@sanity/client": "^7.11.2",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.10.1",
     "@supabase/supabase-js": "^2.58.0",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.14.1",
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "cloudinary": "^2.7.0",
+    "crawlee": "^3.15.1",
+    "dotenv": "^17.2.3",
+    "fs-extra": "^11.3.2",
+    "marked": "^16.3.0",
+    "path": "^0.12.7",
+    "puppeteer": "^24.22.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^4.1.13"
-  }
+    "sanity": "^4.10.1",
+    "slug": "^11.0.0",
+    "styled-components": "^6.1.19",
+    "tailwindcss": "^4.1.13",
+    "url": "^0.11.4"
+  },
+  "description": "```sh npm create astro@latest -- --template minimal ```",
+  "main": "apify-image-crawler.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeusry/D2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeusry/D2/issues"
+  },
+  "homepage": "https://github.com/mikeusry/D2#readme"
 }

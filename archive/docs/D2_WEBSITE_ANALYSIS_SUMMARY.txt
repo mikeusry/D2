@@ -1,0 +1,328 @@
+====================================================================================================
+D2 SANITIZERS - COMPREHENSIVE WEBSITE ANALYSIS FOR ASTRO PAGES
+====================================================================================================
+
+## OVERVIEW
+----------------------------------------------------------------------------------------------------
+Total Pages Crawled: 153
+Total PDF Documents: 55
+
+Product Pages: 30
+Blog Posts: 7
+Category/Collection Pages: 10
+Team Member Pages: 5
+FAQ Pages: 94
+Static Pages: 7
+
+====================================================================================================
+## DETAILED PAGE LISTINGS BY TYPE
+====================================================================================================
+
+### 1. PRODUCT PAGES (30 pages)
+----------------------------------------------------------------------------------------------------
+These are individual product detail pages with purchase information.
+
+1. EZ Step Wall-Mounted Foot-Activated Hand Sanitizer Dispenser | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/foot-operated-hand-sanitizer-dispenser
+
+2. Foamers | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/foamers
+
+3. Alpet D2 Surface Sanitizer Spray | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-d2-surface-sanitizer
+   Description: Alpet D2 Surface Sanitizer Spray offers fast, effective sanitization for hard surfaces and non-porous items, ensuring safe and clean environments in s...
+
+4. Alpet D2 Surface Sanitizing Wipes | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-d2-surface-sanitizing-wipes
+
+5. DEMA PRO-FILL 2: 3 Compartment Sink Chemical Dispenser | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/bsi-dema-pro-fill-2-sink-dispenser
+   Description: Effortlessly sanitize with the DEMA PRO-FILL 2 Sink Dispenser. Accurate dosing for 3-compartment sinks, boosting safety and compliance in commercial k...
+
+6. VersaClenz Manual Hand Hygiene Dispenser | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/versaclenz-manual-hand-hygiene-dispenser
+
+7. VersaClenz Touchless Hand Hygiene Dispenser | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/versaclenz-touchless-hand-hygiene-dispenser
+
+8. Alpet PAA 15% Antimicrobial Solution | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-paa-15-antimicrobial-solution
+
+9. Alpet PAA 5.6% Antimicrobial Solution | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-paa-5-6-antimicrobial-solution
+
+10. Alpet PERA FC 15% Antimicrobial Solution | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-pera-fc-15-antimicrobial-solution
+
+11. Alpet PERA FC 22% Antimicrobial Solution | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-pera-fc-22-antimicrobial-solution
+
+12. Alpet No-Rinse Quat Sanitizer | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-no-rinse-quat-sanitizer
+
+13. Alpet E3 Hand Sanitizer Spray | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/hand-sanitizer-spray
+
+14. D2 Sanitizers Bundle Plus | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/d2-sanitizer-bundle-plus
+   Description: D2 Sanitizers Bundle Plus: Complete hygiene with Alpet D2 Surface Sanitizer, 90-count wipes, and E3+ Hand Sanitizer. Ideal for home & business sanitat...
+
+15. Alpet E2 Sanitizing Foam Soap | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-e2-sanitizing-foam-soap
+
+16. HACCP Q E2 Sanitizing Liquid Soap | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/haccp-q-e2-sanitizing-liquid-soap
+
+17. Alpet Q E2 Sanitizing Foam Soap | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-q-e2-sanitizing-foam-soap
+
+18. Alpet D2 Quat-Free Surface Sanitizer Spray | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-d2-quat-free-surface-sanitizer
+   Description: Alpet D2 Quat-Free Surface Sanitizer Spray provides an effective and reliable sanitization option for facilities that prioritize fast, efficient, and ...
+
+19. Alpet E1 Fragrance-Free Foam Soap | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/fragrance-free-foam-soap
+
+20. SoftenSure Foam Soap | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/softensure-hand-soaps
+
+21. Alpet E3 Plus Hand Sanitizer Spray | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-e3-plus-hand-sanitizer-spray
+
+22. Alpet E4 Industrial Hand Cleaner | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/alpet-e4-industrial-hand-cleaner
+
+23. D2 Sanitizers Hand Sanitizer Bundle | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/d2-sanitizers-hand-sanitizer-bundler
+
+24. D2 Sanitizers Bundle | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/d2-sanitizers-bundle
+   Description: Complete hygiene solution with surface sanitizer, wipes and hand sanitizer for safe, effective sanitization. Ideal for food contact surfaces and hands...
+
+25. Dry Step Bicarb Granulated Floor Treatment | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/dry-step-bicarb-granulated-floor-treatment
+
+26. BSI-275 Concentrated Liquid Warewashing Detergent | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/bsi-275-concentrated-liquid-warewashing-detergent
+
+27. Trench Drain Foaming Attachment | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/trench-drain-foaming-attachment
+
+28. EZ Step Portable, Foot-Activated Hand Sanitizer Dispenser | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/foot-pump-hand-sanitizer
+
+29. Drain Foaming Attachment | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/drain-foaming-attachment
+
+30. Airless SmartStep D2 Sanitizers Footwear Sanitizing Systems | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/product/airless-d2-sanitizers-foot-operated-sanitizing-unit
+
+
+### 2. BLOG POST PAGES (7 pages)
+----------------------------------------------------------------------------------------------------
+Educational content and articles about sanitizers and hygiene.
+
+1. Foaming Drain Cleaner Solutions for Industrial Applications
+   URL: https://www.d2sanitizers.com/blog/foaming-drain-cleaner-solutions-for-industrial-applications
+   Description: Powerful foaming drain cleaners for industry—breaks down grease, removes odors, and prevents clogs for safer, cleaner drains.
+
+2. Online HACCP Certification: Achieve Your Goals Today
+   URL: https://www.d2sanitizers.com/blog/online-haccp-certification-achieve-your-goals-today
+   Description: Discover the top online HACCP certification courses to boost your food safety expertise! Learn how to create a HACCP plan, ensure compliance, and adva...
+
+3. Peracetic Acid Suppliers: D2 Sanitizers
+   URL: https://www.d2sanitizers.com/blog/peracetic-acid-suppliers-d2-sanitizers
+   Description: D2 Sanitizers a regional supplier of specialty chemicals for industrial cleaning, including peracetic acid (PAA). Peracetic acid, also known as peroxy...
+
+4. Sanitizer for 3 Compartment Sink
+   URL: https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink
+   Description: There are five steps to properly clean dishware and utensils in a three compartment sink. Preventing foodborne illnesses from spreading throughout foo...
+
+5. You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly
+   URL: https://www.d2sanitizers.com/blog/prevent-foodborne-illness-by-sanitizing-your-kitchen
+   Description: Your kitchen is the heart of your home, and keeping your house safe and clean is imperative to your family's health. This is especially important duri...
+
+6. The Science Behind Surface Sanitizing: Why Contact Time Matters
+   URL: https://www.d2sanitizers.com/blog/d2s-60-second-rule
+   Description: Discover why it's important to leave a sanitizer on a surface for the correct amount of time for maximum germ elimination and safety.
+
+7. In-Depth Guide To Commercial Disinfectants
+   URL: https://www.d2sanitizers.com/blog/commercial-disinfectants-guide
+   Description: Read our in depth guid to commercial disinfectants for a clean and germ-free environment.
+
+
+### 3. CATEGORY/COLLECTION PAGES (10 pages)
+----------------------------------------------------------------------------------------------------
+Product category listings and main navigation pages.
+
+1. Floor Sanitizers for Food Service
+   URL: https://www.d2sanitizers.com/floor-sanitizers
+   Description: Find top-quality floor sanitizers for food service businesses. Keep your workspace clean and safe with our professional-grade products.
+
+2. Food Safe Wipes | D2 Disinfectant Wipes
+   URL: https://www.d2sanitizers.com/disinfectant-wipes
+   Description: Powerful disinfectant wipes designed for food processing facilities. Eliminate pathogens on surfaces to maintain hygiene and safety compliance.
+
+3. Advanced Chemical Dispenser System | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/dispensers
+   Description: Explore high-quality sanitizing dispensers at D2 Sanitizers, designed for efficient and hygienic distribution in food service, industrial, and commerc...
+
+4. Industrial Hand Soap | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/industrial-hand-soap
+   Description: Experience the strength of D2 Sanitizers' industrial hand soaps. Tough on grime yet gentle on skin, our formulas ensure clean, safe hands in challengi...
+
+5. Peracetic Acid Sanitizer | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/peracetic-acid
+   Description: Discover D2 Sanitizers’ peracetic acid solutions for eco-friendly disinfection across industries. Safe, effective, and ideal for agriculture, food, he...
+
+6. Top Hand Sanitizer Products | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/hand-sanitizers
+   Description: Get your hands on the best hand sanitizer products from D2 Sanitizers. Stay germ-free with our effective sanitizing solutions.
+
+7. Shoe Sanitizer & Boot Sanitizing Stations for Food Service
+   URL: https://www.d2sanitizers.com/shoe-sanitizer
+   Description: Discover D2 Sanitizers’ premium shoe and boot sanitizing stations for food service. Prevent cross-contamination, ensure hygiene, and improve safety wi...
+
+8. Surface Sanitizers | D2 Surface Sanitizers Collection
+   URL: https://www.d2sanitizers.com/surface-sanitizers
+   Description: Discover D2 Sanitizers’ Surface Sanitizers Collection with ready to use spray and wipes. Safe, effective, and ideal for agriculture, food, healthcare,...
+
+9. Peracetic Acid Suppliers: D2 Sanitizers
+   URL: https://www.d2sanitizers.com/blog/peracetic-acid-suppliers-d2-sanitizers
+   Description: D2 Sanitizers a regional supplier of specialty chemicals for industrial cleaning, including peracetic acid (PAA). Peracetic acid, also known as peroxy...
+
+10. 
+   URL: https://www.d2sanitizers.com/blog
+   Description: D2 Sanitizers Blog: Your Guide to Maintaining Safety, Compliance, and Cleanliness in Food Processing, Healthcare, Industrial Hygiene, and More
+
+11. Sanitize Smarter This Holiday Season!
+   URL: https://www.d2sanitizers.com/sanitizer-bundles
+   Description: Choose the Perfect Sanitizer Bundle for Your Clean & Safe Home. Home Chef's and great cooks love a clean and safe kitchen.
+
+
+### 4. TEAM MEMBER PAGES (5 pages)
+----------------------------------------------------------------------------------------------------
+Individual profiles for team members.
+
+1. Erin Flowers | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/team/erin-flowers
+   Description: Erin Flowers is the Copywriter and Editor for Southland Organics.
+
+2. Brad Broxton | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/team/brad-broxton
+   Description: Brad Broxton has over 15 years of experience in sales and marketing to drive growth and forge strong partnerships. With a passion for sustainability and a focus on customer needs, Brad is dedicated to positioning D2 as a leader in innovative sanitization solutions that prioritize both public health and environmental responsibility.
+
+3. Mike Usry | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/team/mike-usry
+   Description: Mike Usry is an entrepreneur and marketer who leads efforts at Southland Organics and D2 Sanitizers, helping customers, retailers and employees connect with organic, sustainable products.
+
+4. Karin Usry | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/team/karin-usry
+
+5. Allen Reynolds | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/team/allen-reynolds
+   Description: Allen Reynolds has over a decade of experience in the organic and environmental products industry to drive innovation and sustainability. With a strong commitment to providing effective and eco-friendly sanitization solutions, he combines his expertise in operations with a passion for health and safety.
+
+
+### 5. STATIC PAGES (6 main pages)
+----------------------------------------------------------------------------------------------------
+About, Cart, Resources, Login, Terms, Privacy Policy.
+
+1. About D2 Sanitizers
+   URL: https://www.d2sanitizers.com/about
+   Description: Learn more about our company and the services we offer. Discover how we can help you with your translation needs and beyond.
+
+2. Shopping Cart | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/cart
+   Description: All of your shopping needs fulfilled in one sanitary little shopping cart!
+
+3. AIRLESS-D2-SANITIZERS-FOOT-OPERATED-SANITIZING-UNIT
+   URL: https://www.d2sanitizers.com/privacy-policy
+   Description: Our privacy policy outlines how we protect your personal information and ensure your data security. Read more about our commitment to safeguarding you...
+
+4. Login | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/account/login
+   Description: Login to your account and see your history and order status.
+
+5. Resources
+   URL: https://www.d2sanitizers.com/resources
+   Description: Explore D2 Sanitizers resources including product guides, safety data sheets, and best practices for maintaining top hygiene in food processing and in...
+
+6. My Account Page | D2 Sanitizers
+   URL: https://www.d2sanitizers.com/account/user
+   Description: Login to your account and see your history and order status.
+
+7. Terms of Service
+   URL: https://www.d2sanitizers.com/terms-of-service
+   Description: Our Terms of Service outlines how we protect your personal information and ensure your data security. Read more about our commitment to safeguarding y...
+
+
+====================================================================================================
+## CONTENT STRUCTURE BY PAGE TYPE
+====================================================================================================
+
+### PRODUCT PAGE STRUCTURE
+----------------------------------------------------------------------------------------------------
+Common elements found on product pages:
+
+- Product Title (H1)
+- Hero Product Image
+- Product Description
+- Price Information
+- Purchase/Add to Cart Button
+- Product Details Section
+  - 'Best Suited for' section
+  - Dispensing Options/Variations
+  - Technical Specifications
+- Supporting Documents (PDFs)
+  - Safety Data Sheets (SDS)
+  - Technical Sheets
+  - Certificates (Kosher, Allergen Letters, etc.)
+  - Letter of Guarantee
+- Related Products
+- Schema.org Product markup
+
+### BLOG POST STRUCTURE
+----------------------------------------------------------------------------------------------------
+Common elements found on blog pages:
+
+- Article Title (H1)
+- Featured Image
+- Publication Date/Author Info
+- Article Content with H2/H3 Headings
+- Body Text with proper formatting
+- Related Links
+- Author Bio (usually Mike Usry)
+- Call-to-Action sections
+- Related Products/Articles
+
+### CATEGORY PAGE STRUCTURE
+----------------------------------------------------------------------------------------------------
+Common elements found on category pages:
+
+- Category Title (H1)
+- Category Description
+- Hero/Banner Images
+- Product Grid/Listings
+- Product Cards with:
+  - Product Image
+  - Product Name
+  - Brief Description
+  - Price
+  - Link to Product Page
+- Educational Content Sections
+- Best Practices Information
+- FAQ sections related to category
+
+### TEAM MEMBER PAGE STRUCTURE
+----------------------------------------------------------------------------------------------------
+Common elements found on team pages:
+
+- Team Member Name (H1)
+- Professional Headshot Photo
+- Job Title/Role
+- Biography Text
+- Professional Background
+- Personal Interests (optional)
+- Related Blog Posts (for some members)
+- Schema.org Person markup

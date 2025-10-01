@@ -1,0 +1,807 @@
+{
+  "categories": [
+    {
+      "category": "hand-sanitizers",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/hand-sanitizers.astro",
+      "heroImage": "d2-sanitizers/categories/67139ef2c33a68ca4b067edb_hand_sanitizer_1",
+      "totalImages": 24,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/67139ef2c33a68ca4b067edb_hand_sanitizer_1",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377088_alpet-e3-spray-group-w-logo-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377079_alpet-e3-plus-family-w-logo-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e6b90555dce7f6c1736f5_pump-up-foamer-cat-image_9271c796-c935-400a-9f56-201131dc2c7f",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9ce75b8a3217d5336733_trenchdrainfoamingattachment",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9c6f4add359188a84df9_drainfoamingattachment",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e831c0c1d95cca55cf878_airless_smart_step_1",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937709a_dema_pro-fill2_900x900_729eb257-6f11-48b6-ac8c-b588e77fa25f",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377023_md10105-10-ez-step-wall-mount-dispenser-w-e3-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937700e_md10012-ez-step-portable-dispenser-w-e3-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702c_vc-touchless-disp-pair-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702f_vc-manual-disp-pair",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67139ef2c33a68ca4b067edb_hand_sanitizer_1",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377088_alpet-e3-spray-group-w-logo-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377079_alpet-e3-plus-family-w-logo-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e6b90555dce7f6c1736f5_pump-up-foamer-cat-image_9271c796-c935-400a-9f56-201131dc2c7f",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9ce75b8a3217d5336733_trenchdrainfoamingattachment",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9c6f4add359188a84df9_drainfoamingattachment",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e831c0c1d95cca55cf878_airless_smart_step_1",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937709a_dema_pro-fill2_900x900_729eb257-6f11-48b6-ac8c-b588e77fa25f",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377023_md10105-10-ez-step-wall-mount-dispenser-w-e3-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937700e_md10012-ez-step-portable-dispenser-w-e3-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702c_vc-touchless-disp-pair-1024",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702f_vc-manual-disp-pair",
+          "alt": "Top Hand Sanitizer Products | D2 Sanitizers"
+        }
+      ]
+    },
+    {
+      "category": "surface-sanitizers",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/surface-sanitizers.astro",
+      "heroImage": "d2-sanitizers/categories/6713a72195c4a7cab5e3cfd3_2019-alpet-d2-group-1024",
+      "totalImages": 10,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/6713a72195c4a7cab5e3cfd3_2019-alpet-d2-group-1024",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72195c4a7cab5e3cf86_commercial_hand_soap_10",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72395c4a7cab5e3d1a1_alpet-d2-qf-group",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72495c4a7cab5e3d23e_d2-wipes_1280x",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72495c4a7cab5e3d1f8_alpet-quat-sanitizer-group",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72195c4a7cab5e3cfd3_2019-alpet-d2-group-1024",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72195c4a7cab5e3cf86_commercial_hand_soap_10",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72395c4a7cab5e3d1a1_alpet-d2-qf-group",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72495c4a7cab5e3d23e_d2-wipes_1280x",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a72495c4a7cab5e3d1f8_alpet-quat-sanitizer-group",
+          "alt": "Surface Sanitizers | D2 Surface Sanitizers Collection"
+        }
+      ]
+    },
+    {
+      "category": "floor-sanitizers",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/floor-sanitizers.astro",
+      "heroImage": "d2-sanitizers/categories/67167a740731c80cb9d82170_floor_sanitizer_4",
+      "totalImages": 12,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/67167a740731c80cb9d82170_floor_sanitizer_4",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167a75265253d733feccba_floor_sanitizer_3",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167af8c773b99b85decb07_floor_sanitizer_1",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167cd87c18e63085d265ef_floor_clean_1",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167cea3871e451cc742798_floor_clean_2",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167e1374de1a7d327353e0_floor_clean_3",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167a740731c80cb9d82170_floor_sanitizer_4",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167a75265253d733feccba_floor_sanitizer_3",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167af8c773b99b85decb07_floor_sanitizer_1",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167cd87c18e63085d265ef_floor_clean_1",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167cea3871e451cc742798_floor_clean_2",
+          "alt": "Floor Sanitizers for Food Service"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67167e1374de1a7d327353e0_floor_clean_3",
+          "alt": "Floor Sanitizers for Food Service"
+        }
+      ]
+    },
+    {
+      "category": "disinfectant-wipes",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/disinfectant-wipes.astro",
+      "heroImage": "d2-sanitizers/categories/66e06febede411dc1ae5dffd_d2-wipes_1280x",
+      "totalImages": 10,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/66e06febede411dc1ae5dffd_d2-wipes_1280x",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2ce912e725f19926fe_d2-wipes-w-bowl-kitchen_cropped",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2de912e725f1992771_food_safe_wipes_1",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2de912e725f1992791_food_safe_wipes_2",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2de912e725f199273c_food_safe_wipes_3",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/66e06febede411dc1ae5dffd_d2-wipes_1280x",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2ce912e725f19926fe_d2-wipes-w-bowl-kitchen_cropped",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2de912e725f1992771_food_safe_wipes_1",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2de912e725f1992791_food_safe_wipes_2",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713ab2de912e725f199273c_food_safe_wipes_3",
+          "alt": "Food Safe Wipes | D2 Disinfectant Wipes"
+        }
+      ]
+    },
+    {
+      "category": "dispensers",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/dispensers.astro",
+      "heroImage": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbbc3_vc-touchless-disp-pair-1024",
+      "totalImages": 30,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbbc3_vc-touchless-disp-pair-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adc09ba04f04d7ddbc73_d2sanitizer_dispensers_22",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbbef_dispenser_auto_1000x1000",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbc00_open-vc-w-text-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e6b90555dce7f6c1736f5_pump-up-foamer-cat-image_9271c796-c935-400a-9f56-201131dc2c7f",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9ce75b8a3217d5336733_trenchdrainfoamingattachment",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9c6f4add359188a84df9_drainfoamingattachment",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e831c0c1d95cca55cf878_airless_smart_step_1",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937709a_dema_pro-fill2_900x900_729eb257-6f11-48b6-ac8c-b588e77fa25f",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377023_md10105-10-ez-step-wall-mount-dispenser-w-e3-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937700e_md10012-ez-step-portable-dispenser-w-e3-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702c_vc-touchless-disp-pair-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702f_vc-manual-disp-pair",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adc09ba04f04d7ddbc4a_dema_pro-fill2_900x900",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbb82_d2sanitizers_20",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbbc3_vc-touchless-disp-pair-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adc09ba04f04d7ddbc73_d2sanitizer_dispensers_22",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbbef_dispenser_auto_1000x1000",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbc00_open-vc-w-text-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e6b90555dce7f6c1736f5_pump-up-foamer-cat-image_9271c796-c935-400a-9f56-201131dc2c7f",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9ce75b8a3217d5336733_trenchdrainfoamingattachment",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/671b9c6f4add359188a84df9_drainfoamingattachment",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/672e831c0c1d95cca55cf878_airless_smart_step_1",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937709a_dema_pro-fill2_900x900_729eb257-6f11-48b6-ac8c-b588e77fa25f",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb889377023_md10105-10-ez-step-wall-mount-dispenser-w-e3-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937700e_md10012-ez-step-portable-dispenser-w-e3-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702c_vc-touchless-disp-pair-1024",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/67116f414b682cb88937702f_vc-manual-disp-pair",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adc09ba04f04d7ddbc4a_dema_pro-fill2_900x900",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713adbf9ba04f04d7ddbb82_d2sanitizers_20",
+          "alt": "Advanced Chemical Dispenser System | D2 Sanitizers"
+        }
+      ]
+    },
+    {
+      "category": "peracetic-acid",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/peracetic-acid.astro",
+      "heroImage": "d2-sanitizers/categories/6713a13c300a1099643c7312_alpet-paa-5-6-group-1024",
+      "totalImages": 10,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/6713a13c300a1099643c7312_alpet-paa-5-6-group-1024",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13c300a1099643c736e_paracetic_acid_0",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13b300a1099643c7294_paracetic_acid_1",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13b300a1099643c72b9_paracetic_acid_2",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13c300a1099643c72df_paracetic_acid_0",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13c300a1099643c7312_alpet-paa-5-6-group-1024",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13c300a1099643c736e_paracetic_acid_0",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13b300a1099643c7294_paracetic_acid_1",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13b300a1099643c72b9_paracetic_acid_2",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713a13c300a1099643c72df_paracetic_acid_0",
+          "alt": "Peracetic Acid Sanitizer | D2 Sanitizers"
+        }
+      ]
+    },
+    {
+      "category": "industrial-hand-soap",
+      "file": "/Users/mikeusry/CODING/D2/src/pages/industrial-hand-soap.astro",
+      "heroImage": "d2-sanitizers/categories/66d87702bf9df164ffba3a20_commercial_hand_soap_10",
+      "totalImages": 6,
+      "allImages": [
+        {
+          "publicId": "d2-sanitizers/categories/66d87702bf9df164ffba3a20_commercial_hand_soap_10",
+          "alt": "Industrial Hand Soap | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713abe1c33a68ca4b0fb1ae_commercial_hand_soap_11",
+          "alt": "Industrial Hand Soap | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713abe1c33a68ca4b0fb19d_icon256",
+          "alt": "Industrial Hand Soap | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/66d87702bf9df164ffba3a20_commercial_hand_soap_10",
+          "alt": "Industrial Hand Soap | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713abe1c33a68ca4b0fb1ae_commercial_hand_soap_11",
+          "alt": "Industrial Hand Soap | D2 Sanitizers"
+        },
+        {
+          "publicId": "d2-sanitizers/categories/6713abe1c33a68ca4b0fb19d_icon256",
+          "alt": "Industrial Hand Soap | D2 Sanitizers"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "product": "alpet-d2-surface-sanitizer",
+      "title": "Alpet D2 Surface Sanitizer Spray",
+      "images": [
+        {
+          "publicId": "d2-sanitizers/products/6721089132f74036c0c7c9d5_alpet_d2_surface_sanitizer_case",
+          "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242438/d2-sanitizers/products/6721089132f74036c0c7c9d5_alpet_d2_surface_sanitizer_case.png",
+          "alt": "Alpet D2 Surface Sanitizer Spray"
+        }
+      ]
+    }
+  ],
+  "blog": [
+    {
+      "page": "Foaming Drain Cleaner Solutions for Industrial Applications",
+      "pageUrl": "https://www.d2sanitizers.com/blog/foaming-drain-cleaner-solutions-for-industrial-applications",
+      "image": {
+        "publicId": "d2-sanitizers/blog/689875df492ecd4ebed30c3e_man-working-in-a-brewery-cleaning-floor-with-wate-2025-04-03-16-05-25-utc_result",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242462/d2-sanitizers/blog/689875df492ecd4ebed30c3e_man-working-in-a-brewery-cleaning-floor-with-wate-2025-04-03-16-05-25-utc_result.jpg",
+        "alt": "Foaming Drain Cleaner Solutions for Industrial Applications"
+      }
+    },
+    {
+      "page": "Foaming Drain Cleaner Solutions for Industrial Applications",
+      "pageUrl": "https://www.d2sanitizers.com/blog/foaming-drain-cleaner-solutions-for-industrial-applications",
+      "image": {
+        "publicId": "d2-sanitizers/blog/689875f9d1f7430494db51f8_action_alpet-no-rinse-quat-port-drain-foamer-1024_result",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242463/d2-sanitizers/blog/689875f9d1f7430494db51f8_action_alpet-no-rinse-quat-port-drain-foamer-1024_result.jpg",
+        "alt": "Foaming Drain Cleaner Solutions for Industrial Applications"
+      }
+    },
+    {
+      "page": "Foaming Drain Cleaner Solutions for Industrial Applications",
+      "pageUrl": "https://www.d2sanitizers.com/blog/foaming-drain-cleaner-solutions-for-industrial-applications",
+      "image": {
+        "publicId": "d2-sanitizers/blog/68987619acefeda1fc62e8a8_man-kneeling-and-hammering-in-a-peg-into-a-metal-b-2025-04-03-23-08-22-utc_result",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242463/d2-sanitizers/blog/68987619acefeda1fc62e8a8_man-kneeling-and-hammering-in-a-peg-into-a-metal-b-2025-04-03-23-08-22-utc_result.jpg",
+        "alt": "Foaming Drain Cleaner Solutions for Industrial Applications"
+      }
+    },
+    {
+      "page": "Foaming Drain Cleaner Solutions for Industrial Applications",
+      "pageUrl": "https://www.d2sanitizers.com/blog/foaming-drain-cleaner-solutions-for-industrial-applications",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242464/d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry.jpg",
+        "alt": "Foaming Drain Cleaner Solutions for Industrial Applications"
+      }
+    },
+    {
+      "page": "Online HACCP Certification: Achieve Your Goals Today",
+      "pageUrl": "https://www.d2sanitizers.com/blog/online-haccp-certification-achieve-your-goals-today",
+      "image": {
+        "publicId": "d2-sanitizers/blog/683611004f9090250575e5e0_haccp-certification",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242465/d2-sanitizers/blog/683611004f9090250575e5e0_haccp-certification.jpg",
+        "alt": "Online HACCP Certification: Achieve Your Goals Today"
+      }
+    },
+    {
+      "page": "Online HACCP Certification: Achieve Your Goals Today",
+      "pageUrl": "https://www.d2sanitizers.com/blog/online-haccp-certification-achieve-your-goals-today",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242464/d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry.jpg",
+        "alt": "Online HACCP Certification: Achieve Your Goals Today"
+      }
+    },
+    {
+      "page": "Peracetic Acid Suppliers: D2 Sanitizers",
+      "pageUrl": "https://www.d2sanitizers.com/blog/peracetic-acid-suppliers-d2-sanitizers",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136418894be0640fc6cc2_64404ceffc3bceb9062b54bd_perabanner",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242466/d2-sanitizers/blog/671136418894be0640fc6cc2_64404ceffc3bceb9062b54bd_perabanner.png",
+        "alt": "Peracetic Acid Suppliers: D2 Sanitizers"
+      }
+    },
+    {
+      "page": "Peracetic Acid Suppliers: D2 Sanitizers",
+      "pageUrl": "https://www.d2sanitizers.com/blog/peracetic-acid-suppliers-d2-sanitizers",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136408894be0640fc6783_66ed7afbf042bfcc4a3dcf71_64404934d3938d7f05c5ccb8_peracetic_acid_paa",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242468/d2-sanitizers/blog/671136408894be0640fc6783_66ed7afbf042bfcc4a3dcf71_64404934d3938d7f05c5ccb8_peracetic_acid_paa.png",
+        "alt": "Peracetic Acid Suppliers: D2 Sanitizers"
+      }
+    },
+    {
+      "page": "Peracetic Acid Suppliers: D2 Sanitizers",
+      "pageUrl": "https://www.d2sanitizers.com/blog/peracetic-acid-suppliers-d2-sanitizers",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136408894be0640fc67a8_66ed7afbf042bfcc4a3dcf74_6440498067d6145603bd6c75_peracetic_acid_southland_sanitize",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242469/d2-sanitizers/blog/671136408894be0640fc67a8_66ed7afbf042bfcc4a3dcf74_6440498067d6145603bd6c75_peracetic_acid_southland_sanitize.png",
+        "alt": "Peracetic Acid Suppliers: D2 Sanitizers"
+      }
+    },
+    {
+      "page": "Peracetic Acid Suppliers: D2 Sanitizers",
+      "pageUrl": "https://www.d2sanitizers.com/blog/peracetic-acid-suppliers-d2-sanitizers",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242464/d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry.jpg",
+        "alt": "Peracetic Acid Suppliers: D2 Sanitizers"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136420bfe05acea24914d_64404f1007527744fdbdc1d9_design-25201-2520-2-",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242471/d2-sanitizers/blog/671136420bfe05acea24914d_64404f1007527744fdbdc1d9_design-25201-2520-2-.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136400bfe05acea248fac_66ed7ade629ac0a31030744c_6442e3635633190292e119f7_overall-252520view",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242472/d2-sanitizers/blog/671136400bfe05acea248fac_66ed7ade629ac0a31030744c_6442e3635633190292e119f7_overall-252520view.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136400bfe05acea248fa4_66ed7ade629ac0a310307464_6442e3938f3b922a1371f519_first-252520sink",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242473/d2-sanitizers/blog/671136400bfe05acea248fa4_66ed7ade629ac0a310307464_6442e3938f3b922a1371f519_first-252520sink.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136410bfe05acea248fc2_66ed7ade629ac0a31030745b_6442e3b59760edaf681035cd_2rd",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242474/d2-sanitizers/blog/671136410bfe05acea248fc2_66ed7ade629ac0a31030745b_6442e3b59760edaf681035cd_2rd.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136410bfe05acea248fcf_66ed7ade629ac0a31030745e_6442e3c6b6ff074557ec43af_3nd-252520sink",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242475/d2-sanitizers/blog/671136410bfe05acea248fcf_66ed7ade629ac0a31030745e_6442e3c6b6ff074557ec43af_3nd-252520sink.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136410bfe05acea248fbf_66ed7ade629ac0a310307442_6442bf0355991b1774830b7e_alpet-252520no-rinse-252520quat",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242475/d2-sanitizers/blog/671136410bfe05acea248fbf_66ed7ade629ac0a310307442_6442bf0355991b1774830b7e_alpet-252520no-rinse-252520quat.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136400bfe05acea248fa9_66ed7ade629ac0a310307461_6442bfb1435336547b8db008_bsi-252520275",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242476/d2-sanitizers/blog/671136400bfe05acea248fa9_66ed7ade629ac0a310307461_6442bfb1435336547b8db008_bsi-252520275.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136400bfe05acea248faf_66ed7ade629ac0a310307467_6442c0672d8c2744d873c71e_bsi-252520dispenser",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242477/d2-sanitizers/blog/671136400bfe05acea248faf_66ed7ade629ac0a310307467_6442c0672d8c2744d873c71e_bsi-252520dispenser.png",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "Sanitizer for 3 Compartment Sink",
+      "pageUrl": "https://www.d2sanitizers.com/blog/sanitizer-for-3-compartment-sink",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242464/d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry.jpg",
+        "alt": "Sanitizer for 3 Compartment Sink"
+      }
+    },
+    {
+      "page": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly",
+      "pageUrl": "https://www.d2sanitizers.com/blog/prevent-foodborne-illness-by-sanitizing-your-kitchen",
+      "image": {
+        "publicId": "d2-sanitizers/blog/67113641db783f4350a5ca48_643d72743d8005b0992c72cf_2",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242478/d2-sanitizers/blog/67113641db783f4350a5ca48_643d72743d8005b0992c72cf_2.png",
+        "alt": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly"
+      }
+    },
+    {
+      "page": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly",
+      "pageUrl": "https://www.d2sanitizers.com/blog/prevent-foodborne-illness-by-sanitizing-your-kitchen",
+      "image": {
+        "publicId": "d2-sanitizers/blog/67113640db783f4350a5c997_66ed7b20f042bfcc4a3df1c7_643d67a8c76c2b702466ba75_2",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242480/d2-sanitizers/blog/67113640db783f4350a5c997_66ed7b20f042bfcc4a3df1c7_643d67a8c76c2b702466ba75_2.png",
+        "alt": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly"
+      }
+    },
+    {
+      "page": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly",
+      "pageUrl": "https://www.d2sanitizers.com/blog/prevent-foodborne-illness-by-sanitizing-your-kitchen",
+      "image": {
+        "publicId": "d2-sanitizers/blog/67113640db783f4350a5c9a1_66ed7b20f042bfcc4a3df1d5_643d6aedf017e45c8871dcf9_3",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242481/d2-sanitizers/blog/67113640db783f4350a5c9a1_66ed7b20f042bfcc4a3df1d5_643d6aedf017e45c8871dcf9_3.png",
+        "alt": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly"
+      }
+    },
+    {
+      "page": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly",
+      "pageUrl": "https://www.d2sanitizers.com/blog/prevent-foodborne-illness-by-sanitizing-your-kitchen",
+      "image": {
+        "publicId": "d2-sanitizers/blog/67113640db783f4350a5c9a4_66ed7b20f042bfcc4a3df1d2_643d6b075759ba363effeaee_4",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242483/d2-sanitizers/blog/67113640db783f4350a5c9a4_66ed7b20f042bfcc4a3df1d2_643d6b075759ba363effeaee_4.png",
+        "alt": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly"
+      }
+    },
+    {
+      "page": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly",
+      "pageUrl": "https://www.d2sanitizers.com/blog/prevent-foodborne-illness-by-sanitizing-your-kitchen",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242464/d2-sanitizers/blog/6711349793ce937952f2f20a_mike_usry.jpg",
+        "alt": "You Can Prevent Foodborne Illness by Sanitizing Your Kitchen Properly"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d340_66f7ebdd92d54c5a947081fd_photo-1527613426441-4da17471b66d",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242484/d2-sanitizers/blog/6711363ff00a4fecf6e7d340_66f7ebdd92d54c5a947081fd_photo-1527613426441-4da17471b66d.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d334_66f7ebdc03d11986ab6d152f_photo-1581578731548-c64695cc6952",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242485/d2-sanitizers/blog/6711363ff00a4fecf6e7d334_66f7ebdc03d11986ab6d152f_photo-1581578731548-c64695cc6952.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d326_66f7ebdc4594ca1c1fea7658_photo-1583907659441-addbe699e921",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242486/d2-sanitizers/blog/6711363ff00a4fecf6e7d326_66f7ebdc4594ca1c1fea7658_photo-1583907659441-addbe699e921.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d353_66f7ebdc23829030d5b627d8_photo-1504813184591-01572f98c85f",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242487/d2-sanitizers/blog/6711363ff00a4fecf6e7d353_66f7ebdc23829030d5b627d8_photo-1504813184591-01572f98c85f.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d320_66f7ebdca7350acde77f34df_photo-1563453392212-326f5e854473",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242489/d2-sanitizers/blog/6711363ff00a4fecf6e7d320_66f7ebdca7350acde77f34df_photo-1563453392212-326f5e854473.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d33a_66f7ebdc23083d966704ee57_photo-1556911220-bff31c812dba",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242490/d2-sanitizers/blog/6711363ff00a4fecf6e7d33a_66f7ebdc23083d966704ee57_photo-1556911220-bff31c812dba.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d356_66f7ebdc01ff42e8f4f1178b_photo-1553268107-a74f013ceb59",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242490/d2-sanitizers/blog/6711363ff00a4fecf6e7d356_66f7ebdc01ff42e8f4f1178b_photo-1553268107-a74f013ceb59.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d344_66f7ebdca7350acde77f34e3_photo-1583947581924-860bda6a26df",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242491/d2-sanitizers/blog/6711363ff00a4fecf6e7d344_66f7ebdca7350acde77f34e3_photo-1583947581924-860bda6a26df.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d31c_66f7ebdc6b15e1843481ceff_photo-1584962018454-9f28048808fa",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242493/d2-sanitizers/blog/6711363ff00a4fecf6e7d31c_66f7ebdc6b15e1843481ceff_photo-1584962018454-9f28048808fa.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d34b_66f7ebdd09f5bd924e4ecaee_photo-1584516080914-2282ead7a02c",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242493/d2-sanitizers/blog/6711363ff00a4fecf6e7d34b_66f7ebdd09f5bd924e4ecaee_photo-1584516080914-2282ead7a02c.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "The Science Behind Surface Sanitizing: Why Contact Time Matters",
+      "pageUrl": "https://www.d2sanitizers.com/blog/d2s-60-second-rule",
+      "image": {
+        "publicId": "d2-sanitizers/blog/6711363ff00a4fecf6e7d34e_66f7ebdd733e8f8d49710c57_photo-1432139509613-5c4255815697",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242494/d2-sanitizers/blog/6711363ff00a4fecf6e7d34e_66f7ebdd733e8f8d49710c57_photo-1432139509613-5c4255815697.jpg",
+        "alt": "The Science Behind Surface Sanitizing: Why Contact Time Matters"
+      }
+    },
+    {
+      "page": "In-Depth Guide To Commercial Disinfectants",
+      "pageUrl": "https://www.d2sanitizers.com/blog/commercial-disinfectants-guide",
+      "image": {
+        "publicId": "d2-sanitizers/blog/671136401fd877296731ff4b_66ffff11861521dbb129616e_main-2520-2520in-2520depth-2520guide-2520to-2520commercial-2520disinfectants",
+        "url": "https://res.cloudinary.com/southland-organics/image/upload/v1759242495/d2-sanitizers/blog/671136401fd877296731ff4b_66ffff11861521dbb129616e_main-2520-2520in-2520depth-2520guide-2520to-2520commercial-2520disinfectants.jpg",
+        "alt": "In-Depth Guide To Commercial Disinfectants"
+      }
+    }
+  ]
+}

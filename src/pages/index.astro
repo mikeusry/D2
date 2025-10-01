@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import ContentSection from '../components/ContentSection.astro';
+import ProductCategoryGrid from '../components/ProductCategoryGrid.astro';
+import IndustrySection from '../components/IndustrySection.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <Layout title="D2 Sanitizers - Professional Sanitization Solutions">
@@ -9,4 +13,23 @@ import Hero from '../components/Hero.astro';
     heading="D2 Sanitizers is a leading provider of chemicals, soaps and sanitizers to food processors, grocery stores and convenience stores."
     description="We provide food handling facilities with products and education to address microbial issues. Our range of cleaners includes various disinfecting and sanitizing products designed to meet cleanliness and hygiene standards in commercial, healthcare and residential spaces. Effective cleaning should not only kill germs but also remove dirt and grime to ensure a hygienic environment. Using an EPA-registered disinfectant is key to achieving this level of cleanliness."
   />
+
+  <ContentSection
+    title="Protect Your Business"
+    heading="Sanitizers & Commercial Disinfectants to Ensure a Safe Environment"
+    paragraphs={[
+      "Trusted by professionals in food production, food service and more, commercial disinfectants are essential for maintaining hygiene and safety protocols. Alcohol-based disinfectants are particularly important for high-touch surfaces and medical equipment due to their rapid evaporative properties.",
+      "Sanitizers reduce bacteria to safe levels, while disinfectants kill a wider range of microorganisms, making them effective for various cleaning needs. Commercial disinfectants are especially effective on non-porous surfaces such as floors, countertops and other hard surfaces.",
+      "These products are also capable of eliminating odor-causing bacteria, reinforcing their cleaning and sanitizing capabilities."
+    ]}
+    imageId="bottle"
+    imageAlt="Commercial sanitizer bottle on production line"
+    imagePosition="right"
+  />
+
+  <ProductCategoryGrid />
+
+  <IndustrySection />
+
+  <FAQSection />
 </Layout>

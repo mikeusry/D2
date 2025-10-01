@@ -1,0 +1,52 @@
+---
+import CloudinaryImage from './CloudinaryImage.astro';
+import categories from '../data/categories.json';
+
+// Map category images to Cloudinary paths (with .jpg extension)
+const categoryImageMap: Record<string, string> = {
+  'hand-sanitizers': 'hand-sanitizers-dispensing.jpg',
+  'hand-soaps': 'hand-soaps.jpg',
+  'floor-sanitizers': 'floor-sanitizers.jpg',
+  'disinfectant-wipes': 'disinfectant-wipes.jpg',
+  'dispensers': 'dispensing-options.jpg',
+  'peracetic-acid': 'peracetic-acid.jpg',
+};
+---
+
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {categories.map((category) => {
+        const cloudinaryId = categoryImageMap[category.slug] || category.slug;
+        return (
+          <a
+            href={`/${category.slug}`}
+            class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <CloudinaryImage
+                publicId={`d2-sanitizers/categories/${cloudinaryId}`}
+                alt={category.name}
+                width={600}
+                height={600}
+                crop="fill"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl md:text-2xl font-heading font-bold text-cyan mb-3">
+                {category.name}
+              </h3>
+              <p class="text-primary text-base mb-4 line-clamp-3">
+                {category.description}
+              </p>
+              <button class="px-6 py-2 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 font-body">
+                See Products
+              </button>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>

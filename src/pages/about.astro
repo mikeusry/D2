@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CloudinaryImage from '../components/CloudinaryImage.astro';
+---
+
+<Layout
+  title="About D2 Sanitizers | Professional Sanitization Solutions"
+  description="Learn about D2 Sanitizers, your trusted partner in professional-grade sanitization and disinfection solutions for food processing, industrial hygiene, and commercial facilities."
+>
+  <main class="py-16 md:py-24">
+    {/* Hero Section */}
+    <section class="container mx-auto px-6 mb-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-6">
+          About D2 Sanitizers
+        </h1>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          Your trusted partner in professional-grade sanitization and disinfection solutions
+        </p>
+      </div>
+    </section>
+
+    {/* Mission Section */}
+    <section class="container mx-auto px-6 mb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
+            Our Mission
+          </h2>
+          <div class="prose prose-lg">
+            <p class="text-gray-700 leading-relaxed mb-4">
+              D2 Sanitizers is dedicated to providing professional-grade sanitization and disinfection solutions that meet the highest standards of safety and efficacy. We serve food processing facilities, commercial kitchens, industrial operations, and educational institutions with products that ensure compliance and peace of mind.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Our commitment is to deliver products that are not only effective against bacteria and pathogens but also safe for your team, your customers, and the environment.
+            </p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden shadow-xl">
+          <CloudinaryImage
+            publicId="d2-sanitizers/about-mission"
+            alt="D2 Sanitizers Mission"
+            width={800}
+            height={600}
+            crop="fill"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    {/* Why Choose D2 Section */}
+    <section class="bg-light-blue py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-12 text-center">
+          Why Choose D2 Sanitizers?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="font-heading font-bold text-xl text-navy mb-4">FDA Compliant</h3>
+            <p class="text-gray-700">
+              All our products meet or exceed FDA regulations for food contact surfaces and processing environments.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="font-heading font-bold text-xl text-navy mb-4">Fast-Acting Formulas</h3>
+            <p class="text-gray-700">
+              Our sanitizers kill 99.9% of bacteria in as little as 10 seconds, ensuring efficient operations.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="font-heading font-bold text-xl text-navy mb-4">No Rinse Required</h3>
+            <p class="text-gray-700">
+              Ready-to-use formulations that save time and labor with no rinsing needed on most applications.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="font-heading font-bold text-xl text-navy mb-4">Expert Support</h3>
+            <p class="text-gray-700">
+              Our team provides technical guidance, training, and ongoing support for all our products.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="font-heading font-bold text-xl text-navy mb-4">Complete Solutions</h3>
+            <p class="text-gray-700">
+              From sanitizers to dispensers to training, we provide comprehensive sanitization programs.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="font-heading font-bold text-xl text-navy mb-4">Proven Results</h3>
+            <p class="text-gray-700">
+              Trusted by leading food processors, restaurants, and industrial facilities nationwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Contact Information */}
+    <section class="container mx-auto px-6 py-16">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
+          Get in Touch
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          Have questions about our products or need a custom sanitization solution? Our team is here to help.
+        </p>
+        <div class="space-y-4 mb-8">
+          <p class="text-gray-700">
+            <strong class="text-navy">Address:</strong> 189 Luke Road, Bogart, GA 30622
+          </p>
+          <p class="text-gray-700">
+            <strong class="text-navy">Phone:</strong> <a href="tel:+17622558353" class="text-primary hover:text-cyan">(762) 255-8353</a>
+          </p>
+        </div>
+        <a
+          href="/contact"
+          class="inline-block px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-cyan transition-colors duration-300 shadow-lg hover:shadow-xl"
+        >
+          Contact Us
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

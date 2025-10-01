@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Hand Sanitizers",
+    "slug": "hand-sanitizers",
+    "description": "Get your hands on the best hand sanitizer products from D2 Sanitizers. Stay germ-free with our effective sanitizing solutions.",
+    "url": "https://www.d2sanitizers.com/hand-sanitizers",
+    "image": "https://cdn.prod.website-files.com/671129b3a7365cecb0df175c/67139ef2c33a68ca4b067edb_hand_Sanitizer_1.jpg"
+  },
+  {
+    "name": "Hand Soaps",
+    "slug": "hand-soaps",
+    "description": "Experience the strength of D2 Sanitizers' industrial hand soaps. Tough on grime yet gentle on skin.",
+    "url": "https://www.d2sanitizers.com/industrial-hand-soap",
+    "image": "https://cdn.prod.website-files.com/639cc74f84d8d4077f6a25a1/66d87702bf9df164ffba3a20_commercial_hand_soap_10.jpg"
+  },
+  {
+    "name": "Floor Sanitizers for Food Service",
+    "slug": "floor-sanitizers",
+    "description": "Find top-quality floor sanitizers for food service businesses. Keep your workspace clean and safe with our professional-grade products.",
+    "url": "https://www.d2sanitizers.com/floor-sanitizers",
+    "image": "https://cdn.prod.website-files.com/671129b3a7365cecb0df175c/6713b91ae8c615ff106102d0_BSX100-D-scaled.jpg"
+  },
+  {
+    "name": "Food Safe Disinfectant Wipes",
+    "slug": "disinfectant-wipes",
+    "description": "Powerful disinfectant wipes designed for food processing facilities. Eliminate pathogens on surfaces to maintain hygiene and safety compliance.",
+    "url": "https://www.d2sanitizers.com/disinfectant-wipes",
+    "image": "https://cdn.prod.website-files.com/639cc74f84d8d4077f6a25a1/66e06febede411dc1ae5dffd_D2-Wipes_1280x.png"
+  },
+  {
+    "name": "Dispensing Options",
+    "slug": "dispensers",
+    "description": "Explore high-quality sanitizing dispensers at D2 Sanitizers, designed for efficient and hygienic distribution in food service, industrial, and commercial settings.",
+    "url": "https://www.d2sanitizers.com/dispensers",
+    "image": "https://cdn.prod.website-files.com/671129b3a7365cecb0df175c/6713adbf9ba04f04d7ddbbc3_VC-Touchless-Disp-Pair-1024.jpg"
+  },
+  {
+    "name": "Peracetic Acid Products",
+    "slug": "peracetic-acid",
+    "description": "Discover D2 Sanitizers' peracetic acid solutions for eco-friendly disinfection across industries. Safe, effective, and ideal for agriculture, food, healthcare, and more.",
+    "url": "https://www.d2sanitizers.com/peracetic-acid",
+    "image": "https://cdn.prod.website-files.com/671129b3a7365cecb0df175c/6713a13c300a1099643c7312_Alpet-PAA-5.6-Group-1024.jpg"
+  }
+]

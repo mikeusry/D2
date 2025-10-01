@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CloudinaryImage from '../components/CloudinaryImage.astro';
+
+const category = {
+  name: 'Industrial Hand Soap',
+  slug: 'industrial-hand-soap',
+  description: 'Experience the strength of D2 Sanitizers\' industrial hand soaps. Tough on grime yet gentle on skin, perfect for food processing and manufacturing facilities.',
+  heroImage: '66d87702bf9df164ffba3a20_commercial_hand_soap_10',
+  features: [
+    'Powerful cleaning action for tough soils',
+    'Gentle formulations with skin conditioners',
+    'Food-safe and FDA compliant options',
+    'Available in foam and liquid formats',
+    'Compatible with our dispenser systems'
+  ],
+  applications: [
+    'Food processing facilities',
+    'Manufacturing and industrial plants',
+    'Commercial kitchens',
+    'Automotive and mechanical shops',
+    'Healthcare facilities'
+  ]
+};
+
+const products = [
+  {
+    title: 'Alpet E2 Sanitizing Foam Soap',
+    slug: 'alpet-e2-foam-soap',
+    price: '$19.99',
+    image: 'alpet-e2-foam',
+    description: 'Sanitizing foam soap with powerful cleaning action'
+  },
+  {
+    title: 'Alpet Q E2 Sanitizing Foam Soap',
+    slug: 'alpet-q-e2-foam-soap',
+    price: '$21.99',
+    image: 'alpet-q-e2-foam',
+    description: 'Quaternary-based sanitizing foam for enhanced antimicrobial action'
+  },
+  {
+    title: 'Alpet E1 Fragrance-Free Foam Soap',
+    slug: 'alpet-e1-foam-soap',
+    price: '$17.99',
+    image: 'alpet-e1-foam',
+    description: 'Fragrance-free option for sensitive environments'
+  }
+];
+---
+
+<Layout
+  title={`${category.name} | D2 Sanitizers`}
+  description={category.description}
+>
+  <main>
+    {/* Hero Section */}
+    <section class="relative bg-navy py-16 md:py-24">
+      <div class="absolute inset-0 opacity-10">
+        <CloudinaryImage
+          publicId={`d2-sanitizers/categories/${category.heroImage}`}
+          alt={category.name}
+          width={1920}
+          height={600}
+          crop="fill"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl">
+          <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6">
+            {category.name}
+          </h1>
+          <p class="text-xl text-gray-200 leading-relaxed">
+            {category.description}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Features Section */}
+    <section class="bg-light-blue py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-12 text-center">
+          Why Choose Our {category.name}?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {category.features.map((feature) => (
+            <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
+              <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">{feature}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Products Grid */}
+    <section class="container mx-auto px-6 py-16">
+      <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-12 text-center">
+        Our Products
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {products.map((product) => (
+          <a
+            href={`/product/${product.slug}`}
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="relative h-64 overflow-hidden bg-gray-100">
+              <CloudinaryImage
+                publicId={`d2-sanitizers/products/${product.image}`}
+                alt={product.title}
+                width={600}
+                height={600}
+                crop="fill"
+                class="w-full h-full object-contain p-4 hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-navy mb-2">
+                {product.title}
+              </h3>
+              <p class="text-gray-700 mb-4">
+                {product.description}
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-primary">{product.price}</span>
+                <span class="text-primary font-bold">View Details →</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {/* Applications Section */}
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-8 text-center">
+          Ideal Applications
+        </h2>
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <ul class="space-y-4">
+            {category.applications.map((application) => (
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                <span class="text-gray-700 text-lg">{application}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* Educational Content */}
+    <section class="container mx-auto px-6 py-16 max-w-4xl">
+      <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy mb-8">
+        Industrial Hand Washing Best Practices
+      </h2>
+      <div class="prose prose-lg max-w-none">
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Proper hand washing is the first line of defense against contamination in food processing and industrial environments. Our industrial hand soaps provide effective cleaning while being gentle enough for frequent daily use.
+        </p>
+        <h3 class="font-heading font-bold text-2xl text-navy mb-4 mt-8">
+          When to Wash Hands
+        </h3>
+        <ul class="space-y-3 mb-6">
+          <li class="text-gray-700">At the start of each shift</li>
+          <li class="text-gray-700">Before and after handling food products</li>
+          <li class="text-gray-700">After using the restroom</li>
+          <li class="text-gray-700">After touching contaminated surfaces</li>
+          <li class="text-gray-700">Before donning gloves or PPE</li>
+        </ul>
+        <h3 class="font-heading font-bold text-2xl text-navy mb-4 mt-8">
+          Proper Hand Washing Technique
+        </h3>
+        <ol class="space-y-3 mb-6 list-decimal pl-6">
+          <li class="text-gray-700">Wet hands with clean running water</li>
+          <li class="text-gray-700">Apply soap and lather well</li>
+          <li class="text-gray-700">Scrub all surfaces for at least 20 seconds</li>
+          <li class="text-gray-700">Rinse thoroughly under running water</li>
+          <li class="text-gray-700">Dry with clean towel or air dryer</li>
+        </ol>
+      </div>
+    </section>
+
+    {/* CTA Section */}
+    <section class="bg-navy py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-white mb-6">
+          Need Help Selecting the Right Soap?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Our team can help you design a complete hand hygiene program for your facility.
+        </p>
+        <a
+          href="/contact"
+          class="inline-block px-8 py-4 bg-cyan text-navy font-bold rounded-lg hover:bg-white transition-colors duration-300 shadow-lg hover:shadow-xl"
+        >
+          Contact Our Team
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

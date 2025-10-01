@@ -1,0 +1,162 @@
+---
+import CloudinaryImage from './CloudinaryImage.astro';
+import { getFAQs } from '../lib/sanity';
+
+// Fetch FAQs from Sanity (will be empty until Sanity is configured)
+let faqs = [];
+try {
+  faqs = await getFAQs();
+} catch (error) {
+  console.log('Sanity not configured yet, using placeholder FAQs');
+  // Placeholder FAQs for development
+  faqs = [
+    {
+      _id: '1',
+      _type: 'faq',
+      question: 'What makes D2 Sanitizers different from other sanitizers?',
+      answer: 'Our sanitizers are specifically formulated for food processing and commercial kitchens, meeting FDA and EPA standards while being safe for food contact surfaces.'
+    },
+    {
+      _id: '2',
+      _type: 'faq',
+      question: 'Are your products safe for food contact surfaces?',
+      answer: 'Yes, our D2 Sanitizers are NSF-listed and FDA-compliant for use on food contact surfaces without requiring a rinse.'
+    },
+    {
+      _id: '3',
+      _type: 'faq',
+      question: 'How quickly do your sanitizers work?',
+      answer: 'Most of our sanitizers kill 99.9% of pathogens in 10-30 seconds, making them ideal for fast-paced commercial environments.'
+    },
+    {
+      _id: '4',
+      _type: 'faq',
+      question: 'Do you offer bulk ordering for large facilities?',
+      answer: 'Yes, we offer bulk pricing and custom ordering solutions for large facilities. Contact us for a quote tailored to your needs.'
+    }
+  ];
+}
+---
+
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Left Side: Image -->
+      <div class="order-2 lg:order-1">
+        <div class="relative rounded-2xl overflow-hidden shadow-xl">
+          <CloudinaryImage
+            publicId="d2-sanitizers/faq-image"
+            alt="D2 Sanitizers FAQ"
+            width={600}
+            height={800}
+            crop="fill"
+            class="w-full h-auto"
+          />
+
+          <!-- Decorative overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent"></div>
+
+          <!-- Bottom text overlay -->
+          <div class="absolute bottom-0 left-0 right-0 p-8">
+            <h3 class="text-white font-heading font-bold text-2xl md:text-3xl mb-2">
+              Still have questions?
+            </h3>
+            <p class="text-white/90 mb-4">
+              Can't find the answer you're looking for? Our team is here to help.
+            </p>
+            <a
+              href="/contact"
+              class="inline-block px-6 py-3 bg-cyan text-white rounded-lg hover:bg-cyan/90 transition-colors font-body font-semibold"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: FAQ Accordion -->
+      <div class="order-1 lg:order-2">
+        <div class="mb-8">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-primary text-lg">
+            Everything you need to know about our sanitizers and how they can help protect your facility.
+          </p>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="space-y-4">
+          {faqs.map((faq, index) => (
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button
+                class="faq-toggle w-full text-left px-6 py-4 bg-white hover:bg-gray-50 transition-colors flex items-center justify-between group"
+                data-faq-index={index}
+                aria-expanded="false"
+              >
+                <span class="font-heading font-bold text-primary text-lg pr-4 group-hover:text-cyan transition-colors">
+                  {faq.question}
+                </span>
+                <svg
+                  class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div class="faq-content hidden px-6 pb-4 bg-gray-50">
+                <p class="text-primary leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- View All FAQs Link -->
+        <div class="mt-8">
+          <a
+            href="/faqs"
+            class="inline-flex items-center text-cyan hover:text-primary transition-colors font-body font-semibold"
+          >
+            View all FAQs
+            <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  // FAQ Accordion functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButtons = document.querySelectorAll('.faq-toggle');
+
+    toggleButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling as HTMLElement;
+        const icon = button.querySelector('.faq-icon') as HTMLElement;
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Toggle current FAQ
+        if (isExpanded) {
+          content.classList.add('hidden');
+          button.setAttribute('aria-expanded', 'false');
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          content.classList.remove('hidden');
+          button.setAttribute('aria-expanded', 'true');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  });
+</script>

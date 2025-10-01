@@ -1,0 +1,71 @@
+---
+import CloudinaryImage from './CloudinaryImage.astro';
+
+interface Props {
+  title?: string;
+  heading: string;
+  paragraphs: string[];
+  imageId: string;
+  imageAlt: string;
+  imagePosition?: 'left' | 'right';
+  backgroundColor?: string;
+}
+
+const {
+  title,
+  heading,
+  paragraphs,
+  imageId,
+  imageAlt,
+  imagePosition = 'right',
+  backgroundColor = 'white',
+} = Astro.props;
+
+const bgColors = {
+  white: 'bg-white',
+  'light-blue': 'bg-light-blue',
+  gray: 'bg-gray-50',
+};
+
+const bgClass = bgColors[backgroundColor as keyof typeof bgColors] || 'bg-white';
+---
+
+<section class={`py-16 md:py-24 ${bgClass}`}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${imagePosition === 'left' ? 'lg:flex-row-reverse' : ''}`}>
+      <!-- Content -->
+      <div class={imagePosition === 'left' ? 'lg:order-2' : ''}>
+        {title && (
+          <p class="text-primary text-sm font-bold uppercase tracking-wide mb-4">
+            {title}
+          </p>
+        )}
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6 leading-tight">
+          {heading}
+        </h2>
+        <div class="space-y-4">
+          {paragraphs.map((paragraph) => (
+            <p class="text-primary text-base md:text-lg leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class={imagePosition === 'left' ? 'lg:order-1' : ''}>
+        <CloudinaryImage
+          publicId={`d2-sanitizers/${imageId}`}
+          alt={imageAlt}
+          width={1200}
+          height={1200}
+          crop="fill"
+          quality="auto"
+          format="auto"
+          class="w-full h-auto rounded-lg shadow-lg"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>

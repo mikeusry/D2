@@ -1,0 +1,237 @@
+---
+import CloudinaryImage from './CloudinaryImage.astro';
+---
+
+<footer class="bg-navy text-white">
+  <!-- Trust Badges Section -->
+  <div class="border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <!-- Security Badges and Text -->
+        <div class="flex flex-col items-center justify-center gap-3 max-w-4xl">
+          <div class="flex items-center gap-3">
+            <CloudinaryImage
+              publicId="d2-sanitizers/trust/teams-access"
+              alt="Teams Access"
+              width={60}
+              height={60}
+            />
+            <CloudinaryImage
+              publicId="d2-sanitizers/trust/cloudflare"
+              alt="Cloudflare"
+              width={180}
+              height={60}
+            />
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="w-14 h-14 text-cyan flex-shrink-0" viewBox="0 0 32 32">
+              <path fill="currentColor" d="m25 14l-2.1-1c-1.7-.8-2.9-2.6-2.9-4.5V2h10v6.5c0 1.9-1.1 3.7-2.9 4.5zM22 4v4.5c0 1.2.7 2.2 1.7 2.7l1.3.6l1.3-.6c1-.5 1.7-1.6 1.7-2.7V4z"></path>
+              <path fill="currentColor" d="M28 16v6H4V6h12V4H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h8v4H8v2h16v-2h-4v-4h8c1.1 0 2-.9 2-2v-6zM18 28h-4v-4h4z"></path>
+            </svg>
+          </div>
+          <p class="text-sm text-gray-300 max-w-md text-center">
+            Shop confidently with our Secure Checkout, protected by advanced SSL encryption and enhanced Cloudflare security to keep your information safe.
+          </p>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="flex items-center justify-center gap-2 flex-wrap">
+          <!-- PayPal -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 325 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39.8193 0.65979H14.6189C12.8944 0.65979 11.4278 1.8965 11.1588 3.57696L0.966641 67.3655C0.763976 68.624 1.75151 69.7589 3.04488 69.7589H15.0758C16.8003 69.7589 18.2668 68.5221 18.5358 66.8381L21.2847 49.6333C21.55 47.9492 23.0202 46.7125 24.7411 46.7125H32.7187C49.3188 46.7125 58.8993 38.783 61.4013 23.0696C62.5288 16.195 61.4492 10.7935 58.1881 7.01063C54.6065 2.85676 48.2539 0.65979 39.8193 0.65979ZM42.7266 23.9571C41.3485 32.8832 34.4395 32.8832 27.7589 32.8832H23.9562L26.624 16.2132C26.7824 15.2056 27.6668 14.4636 28.6985 14.4636H30.4415C34.9922 14.4636 39.285 14.4636 41.5033 17.0243C42.8261 18.552 43.2315 20.8217 42.7266 23.9571Z" fill="#253B80"/>
+            </svg>
+          </div>
+
+          <!-- Mastercard -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9031 1.95361H10.856V16.3213H18.9031V1.95361Z" fill="#F47D20"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3669 9.13736C11.3669 6.2228 12.7405 3.62677 14.8795 1.95362C13.315 0.730227 11.3413 0 9.19594 0C4.11706 0 0 4.091 0 9.13736C0 14.184 4.11706 18.2747 9.19594 18.2747C11.3413 18.2747 13.315 17.5447 14.8795 16.3214C12.7405 14.6482 11.3669 12.0522 11.3669 9.13736Z" fill="#DE1F31"/>
+            </svg>
+          </div>
+
+          <!-- Maestro -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8425 1.95447H10.8211V16.3242H18.8425V1.95447Z" fill="#7673C0"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3304 9.14039C11.3274 6.33587 12.6186 3.68583 14.8318 1.95427C11.0732 -0.990222 5.67561 -0.561331 2.43241 2.93953C-0.810802 6.44039 -0.810802 11.8378 2.43241 15.3387C5.67561 18.8396 11.0732 19.2685 14.8318 16.324C12.6193 14.593 11.3282 11.944 11.3304 9.14039Z" fill="#EB001B"/>
+            </svg>
+          </div>
+
+          <!-- Apple Pay -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 165.52 105.97" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37.45,38.63a8.56,8.56,0,0,1,2.15-6.26,9.1,9.1,0,0,1,6-3.12,9.15,9.15,0,0,1-2.1,6.52A7.55,7.55,0,0,1,37.45,38.63Z" fill="#231f20"/>
+              <path d="M54.08,59.13a22.42,22.42,0,0,1-2.79,5.75c-1.7,2.5-3.45,5-6.25,5s-3.6-1.6-6.7-1.6-4.1,1.55-6.65,1.65S27,67.28,25.25,64.78c-3.5-5.05-6.15-14.25-2.55-20.45a9.88,9.88,0,0,1,8.4-5.1c2.64,0,5.09,1.75,6.69,1.75s4.45-2.1,7.8-1.9A9.55,9.55,0,0,1,53,43.13a9.25,9.25,0,0,0-4.39,7.75A9.08,9.08,0,0,0,54.08,59.13Z" fill="#231f20"/>
+            </svg>
+          </div>
+
+          <!-- Google Pay -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 425 272" xmlns="http://www.w3.org/2000/svg">
+              <path d="M386.731,0.09h-348.69c-1.453,0-2.908,0-4.358,0.008c-1.224,0.01-2.445,0.023-3.669,0.056c-2.666,0.072-5.356,0.228-7.989,0.703c-2.674,0.48-5.163,1.264-7.591,2.5c-2.389,1.213-4.573,2.801-6.469,4.694c-1.894,1.895-3.483,4.075-4.697,6.465c-1.237,2.426-2.021,4.918-2.498,7.589c-0.477,2.633-0.634,5.319-0.706,7.985c-0.033,1.224-0.046,2.445-0.056,3.669c-0.008,1.45-0.008,2.905-0.008,4.358v231.59c0,1.454,0,2.908,0.008,4.358c0.01,1.224,0.023,2.446,0.056,3.669c0.072,2.667,0.229,5.352,0.706,7.986c0.477,2.67,1.261,5.163,2.498,7.589c1.214,2.389,2.803,4.57,4.697,6.464c1.896,1.894,4.08,3.482,6.469,4.694c2.428,1.237,4.917,2.021,7.591,2.5c2.633,0.475,5.323,0.631,7.989,0.703c1.224,0.033,2.445,0.046,3.669,0.056c1.45,0.008,2.905,0.008,4.358,0.008h348.69c1.45,0,2.906,0,4.356-0.008c1.223-0.01,2.448-0.023,3.671-0.056c2.664-0.072,5.352-0.228,7.984-0.703c2.672-0.479,5.164-1.263,7.594-2.5c2.388-1.212,4.57-2.8,6.463-4.694c1.896-1.894,3.484-4.075,4.698-6.464c1.235-2.426,2.02-4.919,2.496-7.589c0.478-2.634,0.635-5.319,0.707-7.986c0.031-1.223,0.043-2.445,0.055-3.669c0.006-1.45,0.006-2.904,0.006-4.358V38.131c0-1.453,0-2.908-0.006-4.358c-0.012-1.224-0.024-2.445-0.055-3.669c-0.072-2.666-0.229-5.352-0.707-7.985c-0.476-2.671-1.261-5.163-2.496-7.589c-1.214-2.39-2.802-4.57-4.698-6.465c-1.893-1.893-4.075-3.481-6.463-4.694c-2.43-1.236-4.922-2.02-7.594-2.5c-2.632-0.475-5.32-0.631-7.984-0.703c-1.223-0.033-2.448-0.046-3.671-0.056C389.637,0.09,388.181,0.09,386.731,0.09z" fill="#3C4043"/>
+            </svg>
+          </div>
+
+          <!-- Visa -->
+          <div class="bg-white rounded px-3 py-2 flex items-center justify-center">
+            <CloudinaryImage
+              publicId="d2-sanitizers/trust/visa"
+              alt="Visa"
+              width={50}
+              height={30}
+              crop="fit"
+            />
+          </div>
+
+          <!-- American Express -->
+          <div class="bg-white rounded px-3 py-2 flex items-center justify-center">
+            <CloudinaryImage
+              publicId="d2-sanitizers/trust/american-express"
+              alt="American Express"
+              width={50}
+              height={30}
+              crop="fit"
+            />
+          </div>
+
+          <!-- Diners Club -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#0079BE" width="32" height="32" rx="4"/>
+              <path fill="#fff" d="M16 8c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm-2 12c-2.2 0-4-1.8-4-4s1.8-4 4-4v8zm4 0v-8c2.2 0 4 1.8 4 4s-1.8 4-4 4z"/>
+            </svg>
+          </div>
+
+          <!-- JCB -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0E4C96" d="M36 0H12C5.4 0 0 5.4 0 12v8c0 6.6 5.4 12 12 12h24c6.6 0 12-5.4 12-12v-8c0-6.6-5.4-12-12-12z"/>
+              <path fill="#fff" d="M31 18h2v-6h-2v6zm-5 0h2v-6h-2v6zm-5 0h2v-6h-2v6z"/>
+            </svg>
+          </div>
+
+          <!-- Stripe -->
+          <div class="bg-white rounded px-2 py-1.5">
+            <svg class="h-[30px] w-auto" viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#635BFF" d="M59.6 12.5c0-4.7-2.3-8.5-6.7-8.5-4.4 0-7.1 3.8-7.1 8.4 0 5.5 3.1 8.4 7.6 8.4 2.2 0 3.9-.5 5.3-1.4v-3.5c-1.4.8-2.9 1.2-4.8 1.2-1.9 0-3.6-.7-3.8-3h9.4c0-.3.1-1 .1-1.6zm-9.5-1.7c0-2.2 1.4-3.2 2.7-3.2 1.3 0 2.6 1 2.6 3.2h-5.3z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Footer Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Product Categories Column -->
+      <div>
+        <h3 class="text-lg font-heading font-bold mb-4">Product Categories</h3>
+        <ul class="space-y-2">
+          <li><a href="/hand-sanitizers" class="text-cyan hover:text-white transition-colors text-sm">Home & Small Kitchen</a></li>
+          <li><a href="/hand-sanitizers" class="text-cyan hover:text-white transition-colors text-sm">Hand Sanitizers</a></li>
+          <li><a href="/shoe-sanitizer" class="text-cyan hover:text-white transition-colors text-sm">Shoe Sanitizer</a></li>
+          <li><a href="/dispensers" class="text-cyan hover:text-white transition-colors text-sm">Dispensing Options</a></li>
+          <li><a href="/floor-sanitizers" class="text-cyan hover:text-white transition-colors text-sm">Floor Sanitizers for Food Service</a></li>
+          <li><a href="/peracetic-acid" class="text-cyan hover:text-white transition-colors text-sm">Peracetic Acid Products</a></li>
+          <li><a href="/surface-sanitizers" class="text-cyan hover:text-white transition-colors text-sm">Surface Sanitizers</a></li>
+          <li><a href="/disinfectant-wipes" class="text-cyan hover:text-white transition-colors text-sm">Food Safe Disinfectant Wipes</a></li>
+          <li><a href="/industrial-hand-soap" class="text-cyan hover:text-white transition-colors text-sm">Hand Soaps</a></li>
+          <li><a href="/fda" class="text-cyan hover:text-white transition-colors text-sm">FDA-Approved Sanitizers</a></li>
+          <li><a href="/sanitizer-bundles" class="text-cyan hover:text-white transition-colors text-sm">Sanitizer Bundles</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Information Column -->
+      <div>
+        <h3 class="text-lg font-heading font-bold mb-4">Company Information</h3>
+        <ul class="space-y-2">
+          <li><a href="/about" class="text-cyan hover:text-white transition-colors text-sm">About D2</a></li>
+          <li><a href="/contact" class="text-cyan hover:text-white transition-colors text-sm">Contact Us</a></li>
+          <li><a href="/terms-of-service" class="text-cyan hover:text-white transition-colors text-sm">Terms of Service</a></li>
+          <li><a href="/privacy-policy" class="text-cyan hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+          <li><a href="/account/login" class="text-cyan hover:text-white transition-colors text-sm flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+            </svg>
+            Login
+          </a></li>
+          <li><a href="/account/user" class="text-cyan hover:text-white transition-colors text-sm flex items-center">
+            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            Account
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Sanitizing Tips and Resources Column -->
+      <div>
+        <h3 class="text-lg font-heading font-bold mb-4">Sanitizing Tips and Resources</h3>
+        <ul class="space-y-2">
+          <li><a href="/blog" class="text-cyan hover:text-white transition-colors text-sm">Blog</a></li>
+          <li><a href="/resources" class="text-cyan hover:text-white transition-colors text-sm">SDS Sheets</a></li>
+          <li><a href="/faqs" class="text-cyan hover:text-white transition-colors text-sm">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information Column -->
+      <div>
+        <h3 class="text-lg font-heading font-bold mb-4">D2 Sanitizers</h3>
+        <address class="not-italic text-sm text-gray-300 space-y-1">
+          <p>189 Luke Road</p>
+          <p>Bogart, GA 30622</p>
+        </address>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Media & Copyright Section -->
+  <div class="border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+
+        <!-- Social Media Links -->
+        <div class="flex items-center space-x-4">
+          <a href="https://facebook.com/d2sanitizers" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-cyan hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/d2sanitizers" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-cyan hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/d2sanitizers" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="text-cyan hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/company/d2sanitizers" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-cyan hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@d2sanitizers" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-cyan hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="/D2 Sanitizers Primary Logo.svg" alt="D2 Sanitizers" class="h-16" />
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-sm text-gray-300">
+          <p>&copy; 2024 D2 Sanitizers. All rights reserved.</p>
+          <p class="text-xs mt-1">site by <a href="https://point.dog" target="_blank" rel="noopener noreferrer" class="text-cyan hover:text-white transition-colors">point.dog</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

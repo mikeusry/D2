@@ -1,0 +1,82 @@
+---
+// Industry uses section with icons and links to detailed pages
+const industries = [
+  {
+    name: 'Food Processing',
+    slug: 'food-processing',
+    svg: '<path fill="currentColor" d="M16.5 2v6h-1V2zM10 2v10.5a3.5 3.5 0 0 0 3 3.465V30h2V15.965a3.5 3.5 0 0 0 3-3.465V2h-1v10h-1V2h-1v10h-1V2h-1v10h-1V2h-1z"/><path fill="currentColor" d="M20 2h2v28h-2z"/>',
+    description: 'Ensure full compliance with FDA regulations and maintain the highest levels of food safety. Our sanitizers and disinfectants eliminate pathogens while being safe for food contact surfaces, keeping your production line clean and efficient.'
+  },
+  {
+    name: 'Food Service',
+    slug: 'food-service',
+    svg: '<path fill="currentColor" d="M28 12h-3V6a2.002 2.002 0 0 0-2-2h-6a2.002 2.002 0 0 0-2 2v6h-3a2.002 2.002 0 0 0-2 2v11a2.002 2.002 0 0 0 2 2h3v3h2v-3h8v3h2v-3h3a2.002 2.002 0 0 0 2-2V14a2.002 2.002 0 0 0-2-2zM17 6h6v6h-6zm11 19H12V14h16z"/><circle cx="19" cy="19" r="2" fill="currentColor"/>',
+    description: 'From kitchen surfaces to dining areas, our disinfectant products offer fast-acting, reliable sanitation that protects customers and staff while meeting industry hygiene standards.'
+  },
+  {
+    name: 'Commercial Kitchens',
+    slug: 'commercial-kitchens',
+    svg: '<path fill="currentColor" d="M16 30a4 4 0 1 1 4-4 4.005 4.005 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2.002 2.002 0 0 0-2-2z"/><path fill="currentColor" d="M28.585 3.413L26 .828 24.586 2.242 27.17 4.827a17.948 17.948 0 0 0-13.384 1.825l-2.38-2.38L10 5.686l2.38 2.38A18.046 18.046 0 0 0 2 26h28a18.046 18.046 0 0 0-1.415-22.587zM16 28a16.02 16.02 0 0 1-12-26.013V26h24V1.987A16.02 16.02 0 0 1 16 28z"/>',
+    description: 'Maintain a spotless kitchen with our surface sanitizers, hand hygiene products and disinfectant wipes, ensuring every area is properly sanitized to avoid cross-contamination.'
+  },
+  {
+    name: 'Janitorial & Sanitation',
+    slug: 'janitorial-sanitation',
+    svg: '<path fill="currentColor" d="M21 30h-2v-5h-6v5h-2V19.142l-5.684 5.684-1.414-1.414L10.586 17H5v-2h8v-2h-2.586l-6.121 6.121-1.414-1.414L9 11.586V6h2v4.586l6.707 6.707L19.414 15H14v-2h8v4.586l6.121 6.121-1.414 1.414L21 19v11z"/>',
+    description: 'Our powerful, fast-acting products are rigorously tested and EPA-registered to kill harmful pathogens, providing reliable sanitation for a wide range of facilities.'
+  },
+  {
+    name: 'Industrial Hygiene',
+    slug: 'industrial-hygiene',
+    svg: '<path fill="currentColor" d="M16 19a6.987 6.987 0 0 1-5.91-3.25l-1.422 1.42A8.98 8.98 0 0 0 15 20.9V24h2v-3.1a8.98 8.98 0 0 0 6.332-2.752l-1.422-1.422A6.987 6.987 0 0 1 16 19z"/><path fill="currentColor" d="M16 4a7 7 0 1 1-7 7 7.008 7.008 0 0 1 7-7m0-2a9 9 0 1 0 9 9 9 9 0 0 0-9-9z"/><path fill="currentColor" d="M23 11h2a9.01 9.01 0 0 0-9-9v2a7.008 7.008 0 0 1 7 7zM16 28v2a12.013 12.013 0 0 0 12-12h-2a10.011 10.011 0 0 1-10 10z"/>',
+    description: 'In heavy-duty industrial settings, our sanitizers ensure safe, effective disinfection without compromising worker safety or operational efficiency.'
+  },
+  {
+    name: 'Education',
+    slug: 'education',
+    svg: '<path fill="currentColor" d="M26 30h-2v-5a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v5H6v-5a7.008 7.008 0 0 1 7-7h6a7.008 7.008 0 0 1 7 7z"/><path fill="currentColor" d="M16 2a5 5 0 1 1-5 5 5 5 0 0 1 5-5m0-2a7 7 0 1 0 7 7 7 7 0 0 0-7-7z"/>',
+    description: 'Ensure the safety of students and staff with products that sanitize classrooms, cafeterias and common areas, creating a healthier learning environment.'
+  }
+];
+---
+
+<section class="py-16 md:py-24 bg-light-blue">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
+        Tailored Solutions for Your Facility's Needs
+      </h2>
+      <p class="text-primary text-base md:text-lg max-w-5xl mx-auto leading-relaxed">
+        At D2 Sanitizers, we understand that each industry has unique sanitation challenges. Our products are highly effective in killing harmful germs to ensure a clean and safe environment. In today's world, disinfectants play a crucial role in preventing the spread of infectious diseases, like colds and influenza. That's why we've developed specialized solutions to meet the strict hygiene requirements of food processing, food service and commercial kitchens. When using industrial disinfectants, it is crucial to follow essential safety precautions, including the use of personal protective equipment (PPE) and proper ventilation. Our products are trusted by professionals across multiple industries for their effectiveness, safety and ease of use. Whether you're sanitizing high-contact surfaces, ensuring footwear hygiene or maintaining equipment cleanliness, we have the products to keep your facility compliant and running smoothly.
+      </p>
+    </div>
+
+    <!-- Industry Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {industries.map((industry) => (
+        <a
+          href={`/industries/${industry.slug}`}
+          class="group bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <!-- Icon -->
+          <div class="mb-6 flex justify-center">
+            <div class="w-20 h-20 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-full h-full" set:html={industry.svg} />
+            </div>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-xl md:text-2xl font-heading font-bold text-cyan mb-4 text-center">
+            {industry.name}
+          </h3>
+
+          <!-- Description -->
+          <p class="text-primary text-base leading-relaxed text-center">
+            {industry.description}
+          </p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
